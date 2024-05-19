@@ -1,0 +1,50 @@
+package com.example.controlador;
+
+import com.example.modelo.Usuario;
+import com.example.servicio.UsuarioService;
+
+import jakarta.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/api/usuarios")
+public class UsuarioController {
+
+    @Autowired
+    private UsuarioService usuarioService;
+    
+    
+    @PostMapping("/registro")
+    public ResponseEntity<?> registrarUsuario(@RequestBody Usuario usuario) {
+        try {
+            Usuario usuarioRegistrado = usuarioService.registrarUsuario(usuario);
+            return new ResponseEntity<>(usuarioRegistrado, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+    
+    @PostMapping("/login")
+    public ResponseEntity<?> autenticarUsuario(@RequestParam String email, @RequestParam String clave) {
+        try {
+            Usuario usuarioAutenticado = usuarioService.autenticarUsuario(email, clave);
+            return new ResponseEntity<>(usuarioAutenticado, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.UNAUTHORIZED);
+        }
+    }
+ // Configurar los encabezados CORS para permitir solicitudes desde http://localhost:3000
+    @RequestMapping("/**")
+    public void handleCors(HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+        response.setHeader("Access-Control-Allow-Headers", "content-type");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
+        response.setHeader("Access-Control-Max-Age", "3600");
+    }
+}
