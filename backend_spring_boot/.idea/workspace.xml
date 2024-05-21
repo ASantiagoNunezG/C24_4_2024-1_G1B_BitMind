@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a48f12a-6ddf-4f3e-8f2a-00685c51df5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/backend_spring_boot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/java/com/backend/bitmind/BitmaindApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/java/com/backend/bitmind/controladores/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/java/com/backend/bitmind/modelos/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/java/com/backend/bitmind/repositorios/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/java/com/backend/bitmind/servicios/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/src/test/java/com/backend/bitmind/BitmaindApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/com/backend/bitmind/BitmaindApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/com/backend/bitmind/controladores/UsuarioController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/com/backend/bitmind/modelos/Usuario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/com/backend/bitmind/repositorios/UsuarioRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/classes/com/backend/bitmind/servicios/UsuarioService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bitmaind/target/test-classes/com/backend/bitmind/BitmaindApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2glyuYJHyg5ESK6x3LRMVDqXhON" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BitmaindApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/register__login__backend",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="BitmaindApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.bitmind.BitmaindApplication" />
+      <module name="bitmind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.bitmind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BitmaindApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a48f12a-6ddf-4f3e-8f2a-00685c51df5c" name="Changes" comment="" />
+      <created>1716286683003</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716286683003</updated>
+    </task>
+    <servers />
+  </component>
+</project>
