@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #1B4332;
+    height: 70px;
+    position: relative;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem !important;
+  }
+  
+.nav-link  {
+    color: white !important;
+    margin-right: 15px;
+  }
+
+.nav-item:hover .nav-link {
+    border-bottom: 2px solid white;
+  }
+  
+.btn {
+    border-color: #46af83 !important;
+}
+  
+
