@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        // Define aquí los repositorios de configuración
+        google() // Este es el repositorio de Google, que contiene las bibliotecas de Android y otras dependencias de Google.
+        mavenCentral() // Este es el repositorio Maven Central, que es un repositorio central de código abierto que alberga muchas bibliotecas y dependencias de terceros.
+        // Otros repositorios si es necesario
+    }
+}
+
+rootProject.name = "LaboratorioCalificado03"
+include ':app'
