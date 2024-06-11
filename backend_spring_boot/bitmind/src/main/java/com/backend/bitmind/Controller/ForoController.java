@@ -19,10 +19,10 @@ public class ForoController {
         return foroService.obtenerTodosLosForos();
     }
 
+    //endopint para crear un nuevo foro, pero con el id del usuario logeado.
     @PostMapping
     public Foro crearForo(@RequestBody Foro foro) {
         return foroService.guardarForo(foro);
     }
 
-    // Otros métodos de controlador según sea necesario
 }

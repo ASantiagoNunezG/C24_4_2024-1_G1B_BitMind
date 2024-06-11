@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/comentarios")
 public class ComentarioController {
@@ -19,10 +20,10 @@ public class ComentarioController {
         return comentarioService.obtenerTodosLosComentarios();
     }
 
+    //endpoint para crear un nuevo comentario con el id del usuario logeado(falta implementar)
     @PostMapping
     public Comentario crearComentario(@RequestBody Comentario comentario) {
         return comentarioService.guardarComentario(comentario);
     }
 
-    // Otros métodos de controlador según sea necesario
 }

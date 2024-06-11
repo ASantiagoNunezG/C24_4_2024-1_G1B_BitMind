@@ -1,12 +1,15 @@
 package com.backend.bitmind.Service;
 
-import com.backend.bitmind.Model.Anuncio;
+import com.backend.bitmind.Model.Carrera;
+import com.backend.bitmind.Model.Ciclo;
+import com.backend.bitmind.Model.Curso;
 import com.backend.bitmind.Model.Publicacion;
 import com.backend.bitmind.Repository.PublicacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PublicacionService {
@@ -32,5 +35,16 @@ public class PublicacionService {
 
     public List<Publicacion> buscarPorTitulo(String titulo) {
         return publicacionRepository.findByTituloContaining(titulo);
+    }
+    public List<Publicacion> obtenerPublicacionesPorCarrera(Carrera carrera) {
+        return publicacionRepository.findByCurso_Ciclo_Carrera(carrera);
+    }
+
+    public List<Publicacion> obtenerPublicacionesPorCiclo(Ciclo ciclo) {
+        return publicacionRepository.findByCurso_Ciclo(ciclo);
+    }
+
+    public List<Publicacion> obtenerPublicacionesPorCurso(Curso curso) {
+        return publicacionRepository.findByCurso(curso);
     }
 }

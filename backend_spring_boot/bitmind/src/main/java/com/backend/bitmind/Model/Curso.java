@@ -1,34 +1,28 @@
 package com.backend.bitmind.Model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
 @Table(name = "cursos")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Curso {
+
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id_curso")
     private int idCurso;
+
     @Column(name = "nombre")
     private String nombre;
-    // Otros atributos y relaciones
-    //GETTERS Y SETTERS
 
-    public int getIdCurso() {
-        return idCurso;
-    }
-
-    public void setIdCurso(int idCurso) {
-        this.idCurso = idCurso;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    @ManyToOne
+    @JoinColumn(name = "id_ciclo", referencedColumnName = "id_ciclo")
+    @JsonIgnore
+    private Ciclo ciclo;
 }

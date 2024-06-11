@@ -2,11 +2,18 @@ package com.backend.bitmind.Model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-import java.time.LocalDate;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.time.LocalDateTime;
 
 @Entity
+@Data
 @Table(name = "comentarios")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Comentario {
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id_comentario")
@@ -16,7 +23,7 @@ public class Comentario {
     private String contenido;
 
     @Column(name = "fecha_creacion")
-    private LocalDate fechaCreacion;
+    private LocalDateTime fechaCreacion;
 
     @ManyToOne
     @JoinColumn(name = "id_usuario", referencedColumnName = "id_usuario")
@@ -26,46 +33,4 @@ public class Comentario {
     @JoinColumn(name = "id_foro", referencedColumnName = "id_foro")
     @JsonBackReference
     private Foro foro;
-
-    //GETTERS Y SETTERS
-
-    public int getIdComentario() {
-        return idComentario;
-    }
-
-    public void setIdComentario(int idComentario) {
-        this.idComentario = idComentario;
-    }
-
-    public String getContenido() {
-        return contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
-
-    public LocalDate getFechaCreacion() {
-        return fechaCreacion;
-    }
-
-    public void setFechaCreacion(LocalDate fechaCreacion) {
-        this.fechaCreacion = fechaCreacion;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Foro getForo() {
-        return foro;
-    }
-
-    public void setForo(Foro foro) {
-        this.foro = foro;
-    }
 }
