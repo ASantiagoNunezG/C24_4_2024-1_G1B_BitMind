@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹íôÁJ$7ee93ae8-f834-4e8f-b821-9e637eda4cf5
+¢
+java:S1128"aRemove this unused import 'org.springframework.boot.autoconfigure.security.reactive.PathRequest'.(½è°ÔüÿÿÿÿJ$38972ff8-1ee7-478e-a1d1-ffdd0612101c
+­
+java:S1128"qRemove this unused import 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter'.(÷ìïŠJ$ca3d6552-90fb-454c-ba35-98f1aa5d42e8

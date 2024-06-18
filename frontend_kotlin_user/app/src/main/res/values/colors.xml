@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#0027FF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="pink">#F378A2</color>
+    <color name="nyanza_h">#9FB3A2</color>
+
+    <!--Paleta de colores para el proyecto-->
+    <color name="dark_green">#081C15</color>
+    <color name="brunswick_green">#1B4332</color>
+    <color name="dartmouth_green">#2D6A4F</color>
+    <color name="sea_green">#40916C</color>
+    <color name="mint2">#52B788</color>
+    <color name="mint">#74C69D</color>
+    <color name="celadon2">#95D5B2</color>
+    <color name="celadon">#B7E4C7</color>
+    <color name="nyanza">#D8F3DC</color>
 </resources>

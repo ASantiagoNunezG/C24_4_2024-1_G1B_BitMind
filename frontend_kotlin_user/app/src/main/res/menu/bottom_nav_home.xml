@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/publicacionesFragment"
+        android:icon="@drawable/icons8_home"
+        android:title="Publicaciones"/>
+    <item
+        android:id="@+id/anunciosFragment"
+        android:icon="@drawable/icons8_altavoz"
+        android:title="Anuncios"/>
+    <item
+        android:id="@+id/forosFragment"
+        android:icon="@drawable/icons8_foro"
+        android:title="Foros"/>
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/icons8_usuario"
+        android:title="Mi Perfil"/>
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+
+    <!-- El constraint es para poder poder trabajar mediaante referencias,
+    como se puede observar, se establece las medidas del constraint layout en base
+    el parent, importante-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:id="@+id/contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro"
+                android:textColor="@color/mint2"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"
+                android:shadowColor="@color/white"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                >
+
+                <!--Inputs para el registro-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/nombres"
+                    android:background="@drawable/border"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/nyanza_h"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/correo"
+                    android:background="@drawable/border"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/nyanza_h"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:background="@drawable/border"
+                    android:layout_margin="10dp"
+                    android:hint="@string/clave"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/nyanza_h"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:background="@drawable/border"
+                    android:layout_margin="10dp"
+                    android:hint="@string/re_clave"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/nyanza_h"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registrarse"
+            app:layout_constraintTop_toBottomOf="@+id/contenedor"
+            app:layout_constraintBottom_toTopOf="@id/txtPregunta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/celadon"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/celadon2"
+            app:cornerRadius="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/txtPregunta"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tienes_cuenta"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:textColor="@color/celadon"/>
+            <TextView
+                android:id="@+id/linkInicio"
+                android:layout_marginStart="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iniciar"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/sea_green"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

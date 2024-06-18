@@ -14,11 +14,9 @@ import java.util.Optional;
 
 @Service
 public class UsuarioService{
-    private UsuarioRepository usuarioRepository = null;
 
-    public UsuarioService() {
-        this.usuarioRepository = usuarioRepository;
-    }
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
     public List<Usuario> allUsers() {
         List<Usuario> users = new ArrayList<>();

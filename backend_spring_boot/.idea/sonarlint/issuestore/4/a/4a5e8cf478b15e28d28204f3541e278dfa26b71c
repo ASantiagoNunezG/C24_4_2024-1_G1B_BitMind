@@ -1,0 +1,14 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿ8îÃÎ‚2J$028d6d91-a549-409e-927c-0b61f727caf2
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ñÃÎ‚2J$312e346f-905a-410b-9494-fccad1c4b567
+™
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8öÃÎ‚2J$0af548e1-c597-4433-a0d3-c089031af052
+ 
+java:S1128"]Remove this unused import 'org.springframework.security.core.userdetails.UserDetailsService'.(¶…¥à8öÃÎ‚2J$8fb2536e-474b-498f-a7a6-1ca41f45a97d
+¬
+java:S1128"dRemove this unused import 'org.springframework.security.core.userdetails.UsernameNotFoundException'.(Í£Ö¶ùÿÿÿÿ8öÃÎ‚2J$c08cc7f5-edaf-460f-a667-73f55bd99462
+¡
+java:S1128	"YRemove this unused import 'org.springframework.security.crypto.password.PasswordEncoder'.(‰¡ßáÿÿÿÿÿ8öÃÎ‚2J$86463c3a-34a8-4122-9171-3a6176fe2baa
+w
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8öÃÎ‚2J$e85399c8-68d3-447e-b0a1-9a833916304b

@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Bitmind_frontend_movil</string>
+    <string name="app_name">BitMind</string>
+    <string name="bitmind">BitMind</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="no_cuenta">¿Aún no tienes una cuenta?</string>
+    <string name="inicio">INICIO DE SESIÓN</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="clave">Contraseña</string>
+    <string name="iniciar">Iniciar Sesión</string>
+    <string name="re_clave">Repita la Contraseña</string>
+    <string name="tienes_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="nombres">Nombres</string>
+    <string name="registro">REGISTRO</string>
+    <!-- Strings related to login -->
+
 </resources>

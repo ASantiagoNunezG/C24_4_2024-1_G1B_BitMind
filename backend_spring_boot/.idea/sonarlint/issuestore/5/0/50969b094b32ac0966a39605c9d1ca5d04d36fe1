@@ -1,0 +1,17 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8•²½Í‚2J$3c1101f5-84f8-4dfe-bd34-37a4a71690b2
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8˜²½Í‚2J$c08879bb-9abc-4221-83bd-8f22d907b223
+„
+java:S1128"ARemove this unused import 'com.backend.bitmind.Dtos.AuthRequest'.(¡ÔŞ£8²½Í‚2J$041228de-cb6f-4211-9077-ff6e2fb80257
+
+java:S1128	"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8£²½Í‚2J$3646e51d-ea37-4c40-84ab-0041e941cc74
+¦
+java:S1128
+"^Remove this unused import 'org.springframework.security.authentication.AuthenticationManager'.(ğş–şÿÿÿÿ8£²½Í‚2J$3d44d0cd-b76e-4dfa-b60f-d8d9fcff036e
+´
+java:S1128"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ8¤²½Í‚2J$166de393-3652-4d43-916b-46ffbff677fa
+
+java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8¤²½Í‚2J$7b1cc7e9-cabd-41f4-853f-7db81bb0ef05
+¬
+java:S1128"dRemove this unused import 'org.springframework.security.core.userdetails.UsernameNotFoundException'.(Í£Ö¶ùÿÿÿÿ8¤²½Í‚2J$e47745ee-3100-46c5-b922-8e0f64f309c7
