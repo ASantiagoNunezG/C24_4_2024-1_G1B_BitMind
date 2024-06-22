@@ -110,14 +110,6 @@ public class PublicacionController {
     }
 
 
-    // Endpoint para obtener los ciclos por carrera
-    @GetMapping("/ciclos-por-carrera/{idCarrera}")
-    public List<Ciclo> obtenerCiclosPorCarrera(@PathVariable int idCarrera) {
-        Carrera carrera = carreraService.obtenerCarreraPorId(idCarrera)
-                .orElseThrow(() -> new RuntimeException("Carrera no encontrada"));
-        return cicloService.obtenerCiclosPorCarrera(carrera);
-    }
-
     // Endpoint para obtener los cursos por ciclo
     @GetMapping("/cursos-por-ciclo/{idCiclo}")
     public List<Curso> obtenerCursosPorCiclo(@PathVariable int idCiclo) {

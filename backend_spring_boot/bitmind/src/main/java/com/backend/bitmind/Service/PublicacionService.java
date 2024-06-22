@@ -17,8 +17,16 @@ public class PublicacionService {
     @Autowired
     private PublicacionRepository publicacionRepository;
 
+    // Inyecta tu repositorio de publicaciones y otros servicios necesarios
+
     public List<Publicacion> obtenerTodasLasPublicaciones() {
-        return publicacionRepository.findAll();
+        List<Publicacion> publicaciones = publicacionRepository.findAll();
+        for (Publicacion publicacion : publicaciones) {
+            String nombreArchivo = publicacion.getImagen();
+            String urlCompleta = "https://bitmindfiles.s3.amazonaws.com/" + nombreArchivo;
+            publicacion.setImagen(urlCompleta);
+        }
+        return publicaciones;
     }
 
     public Publicacion obtenerPublicacionPorId(int id) {
@@ -37,7 +45,7 @@ public class PublicacionService {
         return publicacionRepository.findByTituloContaining(titulo);
     }
     public List<Publicacion> obtenerPublicacionesPorCarrera(Carrera carrera) {
-        return publicacionRepository.findByCurso_Ciclo_Carrera(carrera);
+        return publicacionRepository.findByCurso_Carrera(carrera);
     }
 
     public List<Publicacion> obtenerPublicacionesPorCiclo(Ciclo ciclo) {

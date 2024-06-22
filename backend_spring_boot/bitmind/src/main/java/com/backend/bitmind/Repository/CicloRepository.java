@@ -9,5 +9,4 @@ import java.util.List;
 
 @Repository
 public interface CicloRepository extends JpaRepository<Ciclo,Integer> {
-    List<Ciclo> findByCarrera(Carrera carrera);
 }

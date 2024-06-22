@@ -1,6 +1,5 @@
 package com.backend.bitmind.Model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,11 +20,6 @@ public class Ciclo {
 
     @Column(name = "nombre")
     private String nombre;
-
-    @ManyToOne
-    @JoinColumn(name = "id_carrera", referencedColumnName = "id_carrera")
-    @JsonBackReference
-    private Carrera carrera;
 
     @OneToMany(mappedBy = "ciclo")
     private List<Curso> cursos;

@@ -21,7 +21,8 @@ public class Anuncio {
     @Column(name = "titulo")
     private String titulo;
 
-    @Column(name = "descripcion")
+    @Lob
+    @Column(name = "descripcion", columnDefinition = "TEXT")
     private String descripcion;
 
     @Column(name = "imagen")

@@ -9,7 +9,18 @@
         android:id="@+id/publicacionesFragment"
         android:name="com.nunez.abraham.bitmind_frontend_movil.fragments.PublicacionesFragment"
         android:label="fragment_publicaciones"
-        tools:layout="@layout/fragment_publicaciones" />
+        tools:layout="@layout/fragment_publicaciones" >
+        <action
+            android:id="@+id/action_publicacionesFragment_to_publicacionDetalleFragment"
+            app:destination="@id/publicacionDetalleFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/publicacionesFragment"
+            app:launchSingleTop="true" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/anunciosFragment"
         android:name="com.nunez.abraham.bitmind_frontend_movil.fragments.AnunciosFragment"
@@ -25,4 +36,9 @@
         android:name="com.nunez.abraham.bitmind_frontend_movil.fragments.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/publicacionDetalleFragment"
+        android:name="com.nunez.abraham.bitmind_frontend_movil.fragments.PublicacionDetalleFragment"
+        android:label="fragment_publicacion_detalle"
+        tools:layout="@layout/fragment_publicacion_detalle" />
 </navigation>

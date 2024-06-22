@@ -1,6 +1,5 @@
 package com.backend.bitmind.Model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +21,5 @@ public class Carrera {
     private String nombre;
 
     @OneToMany(mappedBy = "carrera")
-    @JsonManagedReference
-    private List<Ciclo> ciclos;
+    private List<Curso> cursos;
 }

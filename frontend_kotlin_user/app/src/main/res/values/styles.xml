@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define the base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+    </style>
+
+    <!-- Define a custom style for BottomNavigationView -->
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">20dp</item> <!-- Set the icon size -->
+        <item name="itemTextAppearanceActive">@style/BottomNavigationActiveText</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationInactiveText</item>
+    </style>
+
+    <!-- Define a custom text appearance for active items -->
+    <style name="BottomNavigationActiveText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">10sp</item> <!-- Set the text size for active items -->
+    </style>
+
+    <!-- Define a custom text appearance for inactive items -->
+    <style name="BottomNavigationInactiveText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">10sp</item> <!-- Set the text size for inactive items -->
+    </style>
+</resources>

@@ -24,8 +24,5 @@ public class CicloService {
     public Optional<Ciclo> obtenerCicloPorId(int idCiclo) {
         return cicloRepository.findById(idCiclo);
     }
-    public List<Ciclo> obtenerCiclosPorCarrera(Carrera carrera) {
-        return cicloRepository.findByCarrera(carrera);
-    }
 
 }

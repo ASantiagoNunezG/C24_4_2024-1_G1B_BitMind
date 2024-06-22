@@ -7,6 +7,8 @@ import android.view.WindowInsetsController
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.nunez.abraham.bitmind_frontend_movil.databinding.ActivityHomeBinding
 import com.nunez.abraham.bitmind_frontend_movil.fragments.AnunciosFragment
 import com.nunez.abraham.bitmind_frontend_movil.fragments.ForosFragment
@@ -22,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        /*
         // Cargar el Fragment Publicaciones en el contenedor
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
@@ -34,9 +36,16 @@ class HomeActivity : AppCompatActivity() {
         setAnuncios()
         setPerfil()
         setPublicaciones()
+        */
         //COnfigurando propiedades de la pantalla
-        setFullscreen()
+
+        // Configure NavController with BottomNavigationView
+        val navController = findNavController(R.id.nav_host_fragment)
+        binding.navView.setupWithNavController(navController)
+
+        //setFullscreen()
     }
+    /*
     //METODOS PARA LOS NAVBARS
     //HOME
     private fun setPublicaciones() {
@@ -69,7 +78,7 @@ class HomeActivity : AppCompatActivity() {
                 .replace(R.id.fragment_container_init,PerfilFragment())
                 .commit()
         }
-    }
+    }*/
 
 
     //Para la pantalla completa

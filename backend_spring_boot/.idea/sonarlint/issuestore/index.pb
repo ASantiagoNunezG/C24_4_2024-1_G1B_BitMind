@@ -55,3 +55,17 @@ Kbitmind/src/main/java/com/backend/bitmind/Repository/CarreraRepository.java,8\
 Kbitmind/src/main/java/com/backend/bitmind/Repository/ArchivoRepository.java,9\1\9140fc99c0c0cda6c63ea8c5644eca4aae63a40f
 {
 Kbitmind/src/main/java/com/backend/bitmind/Repository/AnuncioRepository.java,4\e\4eddb7388afa25decf2b509d569d090c89e040a4
+?
+bitmind/pom.xml,6\e\6ec9702fcf78cfc5d717a9f8ee96173895a24d47
+x
+Hbitmind/src/main/java/com/backend/bitmind/Service/ValoracionService.java,7\d\7dbf2774e3c0d8828670917c0d96dc30e31eef02
+y
+Ibitmind/src/main/java/com/backend/bitmind/Service/PublicacionService.java,f\e\fee1e4f851cdb69f6b7011ca521f5137104ae397
+r
+Bbitmind/src/main/java/com/backend/bitmind/Dtos/PublicacionDto.java,9\b\9b00c360e4fddf3f78cf2f42ac709a4a0a8007fc
+r
+Bbitmind/src/main/java/com/backend/bitmind/Dtos/PublicacionDTO.java,1\2\129e60777cbc4f481cf380bcc8002637498a6084
+s
+Cbitmind/src/main/java/com/backend/bitmind/Service/CicloService.java,f\e\fe6ad03121ccc4f72744aa707f97ddef400611e2
+u
+Ebitmind/src/main/java/com/backend/bitmind/Service/AnuncioService.java,8\8\883911c46563d6b03f10a93ed084193f7391567d

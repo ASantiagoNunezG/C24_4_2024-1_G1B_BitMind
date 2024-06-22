@@ -25,4 +25,9 @@ public class Curso {
     @JoinColumn(name = "id_ciclo", referencedColumnName = "id_ciclo")
     @JsonIgnore
     private Ciclo ciclo;
+
+    @ManyToOne
+    @JoinColumn(name = "id_carrera", referencedColumnName = "id_carrera")
+    @JsonIgnore
+    private Carrera carrera;
 }

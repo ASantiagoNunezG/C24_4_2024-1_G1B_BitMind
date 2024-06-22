@@ -1,13 +1,11 @@
 package com.nunez.abraham.bitmind_frontend_movil.fragments
 
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.nunez.abraham.bitmind_frontend_movil.adapters.PublicacionAdapter
 import com.nunez.abraham.bitmind_frontend_movil.databinding.FragmentPublicacionesBinding
 import com.nunez.abraham.bitmind_frontend_movil.models.Publicacion
@@ -32,17 +30,15 @@ class PublicacionesFragment : Fragment() {
         return binding.root
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.recyclerViewPublicaciones.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerViewPublicaciones.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columnas
         publicacionAdapter = PublicacionAdapter(publicaciones)
         binding.recyclerViewPublicaciones.adapter = publicacionAdapter
 
         loadPublicaciones()
     }
-
 
     private fun loadPublicaciones() {
         CoroutineScope(Dispatchers.IO).launch {

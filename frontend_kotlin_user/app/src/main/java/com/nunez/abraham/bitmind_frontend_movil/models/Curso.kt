@@ -4,4 +4,5 @@ data class Curso(
     val idCurso: Int,
     val nombre: String,
     val ciclo: Ciclo,
+    val carrera: Carrera
 )

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'backend',
     'rest_framework',
     'corsheaders',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bitmind4',
+        'NAME': 'bitmind3',
         'USER': 'root',
         'PASSWORD': '12345',
         'HOST': 'localhost',  # O la dirección de tu servidor MySQL
@@ -137,21 +138,30 @@ DATABASES = {
 
 #CONFIGURACIONES PARA EL PROYECTO
 
-import os
+#import os
 
 # Define the base directory of the project
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Go one level up from BASE_DIR and then to 'Materiales'
 #MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'Materiales')
 # Go two levels up from BASE_DIR and then to 'Materiales'
-MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'Materiales')
+#MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'Materiales')
 
 #Configuraciones para acceder a las imagenes a través de la ruta
-MEDIA_URL = '/media/'
+#MEDIA_URL = '/media/'
 
 #Listo para trabajar con REACT
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Agrega el dominio de tu frontend React aquí
 ]
 
+#AWS S3
+AWS_ACCESS_KEY_ID = 'AKIAYS2NTYQS5TB37ZV3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'bitmindfiles'
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_S3_CUSTOM_DOMAIN = 'bitmindfiles.s3.amazonaws.com'
+
+# Configuración del almacenamiento predeterminado
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

@@ -1,2 +1,6 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µæäÕJ$177501b9-934e-4e0e-bc58-3a8c324db6e6
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µæäÕJ$eeb59307-14ae-4437-b837-fbf929e3aebe
+`
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Carrera'.(‚¶öªÿÿÿÿÿ8š¾¨Áƒ2
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8š¾¨Áƒ2

@@ -67,22 +67,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingVertical="20dp">
+            android:paddingVertical="20dp"
+            >
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewPublicaciones"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp">
             </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textAlignment="center"
-            android:text="Welcome to this publications section"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

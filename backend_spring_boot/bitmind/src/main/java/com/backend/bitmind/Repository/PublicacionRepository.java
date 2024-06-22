@@ -16,7 +16,7 @@ public interface PublicacionRepository extends JpaRepository<Publicacion, Intege
     List<Publicacion> findByCurso_Ciclo(Ciclo ciclo);
 
     // Filtrar publicaciones por carrera
-    List<Publicacion> findByCurso_Ciclo_Carrera(Carrera carrera);
+    List<Publicacion> findByCurso_Carrera(Carrera carrera);
 
     //Filtrar publicacion por curso
     List<Publicacion> findByCurso(Curso curso);

@@ -30,7 +30,7 @@ public class Publicacion {
     private String imagen;
 
     @Column(name = "vistas")
-    private String vistas;
+    private int vistas = 0; // Iniciar por defecto en 0
 
     @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion;

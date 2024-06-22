@@ -3,16 +3,19 @@ package com.nunez.abraham.bitmind_frontend_movil.retrofit
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.google.gson.GsonBuilder
+import com.nunez.abraham.bitmind_frontend_movil.apis.AnuncioApi
 import com.nunez.abraham.bitmind_frontend_movil.apis.PublicacionApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.time.LocalDateTime
 
 
+
 object RetrofitInstance {
     private const val BASE_URL = "http://192.168.18.13:8080/"
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private val gson = GsonBuilder()
 
         //Dando formato a la fecha
@@ -29,6 +32,9 @@ object RetrofitInstance {
 
     val publicacionApi: PublicacionApi by lazy {
         retrofit.create(PublicacionApi::class.java)
+    }
+    val anuncioApi: AnuncioApi by lazy {
+        retrofit.create(AnuncioApi::class.java)
     }
 
     /*
