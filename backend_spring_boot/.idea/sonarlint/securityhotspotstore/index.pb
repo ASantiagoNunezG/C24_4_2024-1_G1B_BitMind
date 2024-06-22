@@ -69,3 +69,5 @@ s
 Cbitmind/src/main/java/com/backend/bitmind/Service/CicloService.java,f\e\fe6ad03121ccc4f72744aa707f97ddef400611e2
 u
 Ebitmind/src/main/java/com/backend/bitmind/Service/AnuncioService.java,8\8\883911c46563d6b03f10a93ed084193f7391567d
+u
+Ebitmind/src/main/java/com/backend/bitmind/Service/CarreraService.java,3\0\30e18951f879ef7a4513a1d7c8adfc996d51d65c

@@ -21,7 +21,7 @@ public class AnuncioService {
         List<Anuncio> anuncios = anuncioRepository.findAll();
             for (Anuncio anuncio : anuncios) {
             String nombreArchivo = anuncio.getImagen();
-            String urlCompleta = "https://bitmindfiles.s3.amazonaws.com/" + nombreArchivo;
+            String urlCompleta = "https://bucketbitmind.s3.amazonaws.com/" + nombreArchivo;
             anuncio.setImagen(urlCompleta);
         }
         return anuncios;

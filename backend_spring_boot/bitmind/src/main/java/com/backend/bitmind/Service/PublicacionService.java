@@ -23,7 +23,7 @@ public class PublicacionService {
         List<Publicacion> publicaciones = publicacionRepository.findAll();
         for (Publicacion publicacion : publicaciones) {
             String nombreArchivo = publicacion.getImagen();
-            String urlCompleta = "https://bitmindfiles.s3.amazonaws.com/" + nombreArchivo;
+            String urlCompleta = "https://bucketbitmind.s3.amazonaws.com/" + nombreArchivo;
             publicacion.setImagen(urlCompleta);
         }
         return publicaciones;
