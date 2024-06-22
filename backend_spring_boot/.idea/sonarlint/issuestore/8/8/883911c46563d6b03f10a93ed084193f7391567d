@@ -1,0 +1,6 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿ8ýƒ¹Ïƒ2J$7b2dcf6c-87e3-44ba-9a98-a6ca73a6a9c1
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ÿƒ¹Ïƒ2J$da13c389-b43c-4b4b-b394-a4e91b9cd342
+d
+java:S1128"BRemove this unused import 'com.backend.bitmind.Model.Publicacion'.(î–ß½úÿÿÿÿ8øÂ¼Ïƒ2

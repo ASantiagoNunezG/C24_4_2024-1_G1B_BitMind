@@ -1,0 +1,8 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘·Óµúÿÿÿÿ8¼¤ Àƒ2J$5f7a4e25-ecfb-4e47-94f7-ba19cc40bd4a
+„
+java:S1128"<Remove this unused import 'com.backend.bitmind.Model.Curso'.(÷Ô³§ÿÿÿÿÿ8äõşÁƒ2J$02e555c9-d476-438b-87e0-6c06bde9d978
+†
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Usuario'.(¤‹šıÿÿÿÿ8äõşÁƒ2J$5ff7e27f-2c3d-497a-b2cb-f309fab44e79
+•
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8Â¤ Àƒ2J$19f4901d-526b-422d-afff-9d5653a768ed
