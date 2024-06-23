@@ -6,7 +6,7 @@ class Usuario(models.Model):
     nombres = models.CharField(max_length=255)
     correo = models.EmailField(unique=True)
     clave = models.CharField(max_length=255)
-    imagen = models.ImageField(upload_to='usuarios/')
+    imagen = models.ImageField(upload_to='')
 
     class Meta:
         managed = True
