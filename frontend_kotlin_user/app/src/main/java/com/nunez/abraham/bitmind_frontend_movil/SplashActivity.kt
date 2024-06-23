@@ -24,7 +24,6 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.bitmindLogo.animationXAttention(Attention.ATTENTION_PULSE)
-        binding.tecsupLogo.animationXAttention(Attention.ATTENTION_BOUNCE)
         runPostDelayed()
 
         // Configurar modo inmersivo

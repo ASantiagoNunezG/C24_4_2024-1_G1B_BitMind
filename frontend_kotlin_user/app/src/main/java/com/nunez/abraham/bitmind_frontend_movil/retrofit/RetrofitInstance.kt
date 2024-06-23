@@ -4,9 +4,11 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import com.google.gson.GsonBuilder
 import com.nunez.abraham.bitmind_frontend_movil.apis.AnuncioApi
+import com.nunez.abraham.bitmind_frontend_movil.apis.ForoApi
 import com.nunez.abraham.bitmind_frontend_movil.apis.PublicacionApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import java.time.LocalDateTime
 
 
@@ -35,6 +37,9 @@ object RetrofitInstance {
     }
     val anuncioApi: AnuncioApi by lazy {
         retrofit.create(AnuncioApi::class.java)
+    }
+    val foroApi: ForoApi by lazy {
+        retrofit.create(ForoApi::class.java)
     }
 
     /*

@@ -32,7 +32,7 @@
                 android:shadowColor="@color/white"
                 android:shadowDx="0"
                 android:shadowDy="0"
-                android:shadowRadius="5"/>
+                android:shadowRadius="1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                     android:background="@drawable/border"
                     android:layout_margin="10dp"
                     android:textSize="25sp"
-                    android:textColorHint="@color/nyanza_h"
+                    android:textColorHint="@color/nyanza"
                     android:textColor="@color/black"/>
                 <EditText
                     android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                     android:background="@drawable/border"
                     android:layout_margin="10dp"
                     android:textSize="25sp"
-                    android:textColorHint="@color/nyanza_h"
+                    android:textColorHint="@color/nyanza"
                     android:textColor="@color/black"/>
                 <EditText
                     android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                     android:layout_margin="10dp"
                     android:hint="@string/clave"
                     android:textSize="25sp"
-                    android:textColorHint="@color/nyanza_h"
+                    android:textColorHint="@color/nyanza"
                     android:textColor="@color/black"/>
                 <EditText
                     android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     android:layout_margin="10dp"
                     android:hint="@string/re_clave"
                     android:textSize="25sp"
-                    android:textColorHint="@color/nyanza_h"
+                    android:textColorHint="@color/nyanza"
                     android:textColor="@color/black"/>
 
             </LinearLayout>

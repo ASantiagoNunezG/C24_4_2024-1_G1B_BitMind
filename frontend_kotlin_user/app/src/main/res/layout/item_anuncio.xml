@@ -9,7 +9,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="@drawable/border">
+        android:background="@drawable/border2">
+        <!--Fechas encabezado-->
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
@@ -19,6 +20,8 @@
                 android:id="@+id/fechaCreacion"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="Fecha creacion"
                 android:gravity="start" />
@@ -28,6 +31,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="Hora creacion"
                 android:gravity="end" />
         </LinearLayout>
@@ -36,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:src="@drawable/img_default"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/border_image"/>
         <TextView
             android:id="@+id/txttitulo"
             android:layout_width="wrap_content"
@@ -44,6 +50,7 @@
             android:text="Titulo"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:paddingVertical="5dp"/>
 
@@ -63,7 +70,8 @@
                 android:padding="10dp"
                 android:scrollbars="vertical"
                 android:fadingEdge="vertical"
-                android:fadeScrollbars="false"/>
+                android:fadeScrollbars="false"
+                android:textColor="@color/black" />
         </ScrollView>
 
         <TextView
@@ -73,7 +81,8 @@
             android:text="usuario"
             android:paddingVertical="5dp"
             android:textStyle="italic"
-            android:layout_gravity="end"/>
+            android:layout_gravity="end"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

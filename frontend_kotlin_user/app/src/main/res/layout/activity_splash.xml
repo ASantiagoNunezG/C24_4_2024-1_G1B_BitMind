@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tecsupLogo"
-        android:src="@drawable/bitmind_logo_png"/>
+        android:src="@drawable/bitmind_logo_png2"/>
 
 
     <ImageView
