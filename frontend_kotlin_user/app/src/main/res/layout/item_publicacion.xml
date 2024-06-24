@@ -32,6 +32,7 @@
             android:ellipsize="end"/>
 
         <TextView
+            android:id="@+id/valoracion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valoración"

@@ -1,6 +1,7 @@
 package com.nunez.abraham.bitmind_frontend_movil.adapters
 
 import android.os.Build
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,37 +14,43 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.nunez.abraham.bitmind_frontend_movil.R
+import com.nunez.abraham.bitmind_frontend_movil.fragments.PublicacionesFragment
+import com.nunez.abraham.bitmind_frontend_movil.fragments.PublicacionesFragmentDirections
 import com.nunez.abraham.bitmind_frontend_movil.models.Publicacion
+import com.nunez.abraham.bitmind_frontend_movil.retrofit.RetrofitInstance
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 class PublicacionAdapter(private val publicaciones: List<Publicacion>) : RecyclerView.Adapter<PublicacionAdapter.PublicacionViewHolder>() {
 
-    class PublicacionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class PublicacionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        //private lateinit var publicacion: Publicacion
 
         init {
             val btn: Button = itemView.findViewById(R.id.btnNavigate_to_Publication_detail)
             btn.setOnClickListener {
+                val currentPublicacion = publicaciones[adapterPosition]
+                // Llamar al método para incrementar vistas usando Retrofit
+                incrementarVistas(currentPublicacion.idPublicacion)
+
                 itemView.findNavController().navigate(R.id.action_publicacionesFragment_to_publicacionDetalleFragment)
+                // Navegar a la pantalla de detalle y pasar el argumento 'idPublicacion'
+                //val action = PublicacionesFragmentDirections.actionPublicacionesFragmentToPublicacionDetalleFragment(idPublicacion = currentPublicacion.idPublicacion)
+                //itemView.findNavController().navigate(action)
             }
         }
-        /*
-        init {
-            val btn: Button = itemView.findViewById(R.id.btnNavigate_to_Publication_detail)
-            btn.setOnClickListener {
-                val action = PublicacionesFragmentDirections.actionPublicacionesFragmentToPublicacionDetalleFragment()
-                itemView.findNavController().navigate(action)
-            }
-        }*/
+
 
         val titulo: TextView = itemView.findViewById(R.id.titulo)
-        //val descripcion: TextView = itemView.findViewById(R.id.descripcion)
         val fechaCreacion: TextView = itemView.findViewById(R.id.fechaCreacion)
+        val valoracion: TextView = itemView.findViewById(R.id.valoracion)
         val horaCreacion: TextView = itemView.findViewById(R.id.horaCreacion)
         val imagen: ImageView = itemView.findViewById(R.id.imagenPublicacion)
-        //val fechaModificacion: TextView = itemView.findViewById(R.id.fechaModificacion)
-        //val usuarioNombres: TextView = itemView.findViewById(R.id.usuarioNombres)
+        val vistas: TextView = itemView.findViewById(R.id.vistas)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PublicacionViewHolder {
@@ -57,13 +64,10 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) : Recycle
     override fun onBindViewHolder(holder: PublicacionViewHolder, position: Int) {
         val publicacion = publicaciones[position]
         holder.titulo.text = publicacion.titulo
-        //holder.descripcion.text = publicacion.descripcion
-        //val urlImage = publicacion.imagen
         holder.fechaCreacion.text = formatDateFecha(publicacion.fechaCreacion)
         holder.horaCreacion.text = formatDateHora(publicacion.fechaCreacion)
-        //holder.fechaModificacion.text = publicacion.fechaModificacion.toString()
-        //holder.usuarioNombres.text = "Usuario: ${publicacion.usuario.nombres}"
-
+        holder.valoracion.text = "${publicacion.promedioValoracion.toString()}/10"
+        holder.vistas.text = publicacion.vistas
 
         // Cargar la imagen utilizando Glide
         Glide.with(holder.itemView)
@@ -73,6 +77,8 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) : Recycle
             .transition(DrawableTransitionOptions.withCrossFade()) // Animación de transición
             .centerCrop() // escalará la imagen con corte, no encontre una que no lo haga
             .into(holder.imagen) // Cargar la imagen en el ImageView
+
+
 
     }
     // Función para formatear la hora y la fecha
@@ -85,6 +91,22 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) : Recycle
     private fun formatDateFecha(fecha: LocalDateTime): String {
         val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
         return fecha.format(formatter)
+    }
+
+    // Método para llamar a Retrofit y incrementar las vistas
+    private fun incrementarVistas(idPublicacion: Int) {
+        // Llamar al método de Retrofit para incrementar vistas
+        GlobalScope.launch(Dispatchers.IO) {
+            try {
+                RetrofitInstance.publicacionApi.incrementarVista(idPublicacion)
+                // Actualizar las vistas localmente si es necesario
+                // Por ejemplo, puedes incrementar la variable en el objeto publicacion
+                // publicacion.vistas++
+            } catch (e: Exception) {
+                // Manejar errores de manera apropiada
+                Log.e("PublicacionAdapter", "Error al incrementar vistas: ${e.message}")
+            }
+        }
     }
 
     override fun getItemCount() = publicaciones.size

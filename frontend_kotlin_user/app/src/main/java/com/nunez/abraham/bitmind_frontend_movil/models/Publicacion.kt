@@ -13,5 +13,6 @@ data class Publicacion(
     val usuario: Usuario,
     val curso: Curso,
     val valoraciones: List<Valoracion>,
-    val archivos: List<Archivo>
+    val archivos: List<Archivo>,
+    val promedioValoracion: Double
 )
