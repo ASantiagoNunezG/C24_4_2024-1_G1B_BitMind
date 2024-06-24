@@ -1,5 +1,6 @@
 package com.backend.bitmind.Controller;
 
+import com.backend.bitmind.Dtos.AnuncioDTO;
 import com.backend.bitmind.Model.Anuncio;
 import com.backend.bitmind.Service.AnuncioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +23,15 @@ public class AnuncioController {
     }
 
     // Endpoint para obtener todos los anuncios
-    @GetMapping
-    public ResponseEntity<List<Anuncio>> obtenerTodosLosAnuncios() {
+
+    /*public ResponseEntity<List<Anuncio>> obtenerTodosLosAnuncios() {
         List<Anuncio> anuncios = anuncioService.obtenerTodosLosAnuncios();
         return new ResponseEntity<>(anuncios, HttpStatus.OK);
+    }*/
+    @GetMapping
+    public ResponseEntity<List<AnuncioDTO>> obtenerTodosLosAnuncios() {
+        List<AnuncioDTO> anunciosDTO = anuncioService.obtenerTodosLosAnuncios();
+        return new ResponseEntity<>(anunciosDTO,HttpStatus.OK);
     }
 
     // Endpoint para buscar anuncios por fragmento de nombre

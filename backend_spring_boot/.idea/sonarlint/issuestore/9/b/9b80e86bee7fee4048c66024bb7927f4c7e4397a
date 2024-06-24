@@ -1,17 +1,19 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿJ$c39dcb7e-73e4-472d-8c8a-04bf53c1afa1
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$b928b295-bd96-49e6-b8cd-298fe6a6fa48
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$7c276bec-6d5e-49a8-b3d2-835a2954ec62
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$b8678416-90b9-478d-9485-5d736d7d576e
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$ccc8652c-5556-4edd-8c7c-9d8fef93f700
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$5bffb884-cf11-4cfe-8359-f12dc7829a1c
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$4803ef62-84fb-41ad-9a0e-c48b76038763
-~
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄÞJ$ebe8a05c-bc81-4212-84d7-7c2f703e376d
-	java:S125‚"<This block of commented-out lines of code should be removed.(˜ú•Ë8Õ®«Áƒ2J$e296b08b-1237-4eaa-94a1-181004209f1d
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿJ$5af43ac5-84c0-4448-9f0a-904561ac568b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8èüÌ¿„2J$bd87c9a3-3614-4833-82f3-9f69cfdba530
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$1a3bcbe3-a72e-4ca3-ab22-ea1248d17003
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$a66e2c38-a045-4696-b99c-8d902d04da19
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$43a6356a-9d7c-4840-b691-5adb9338b238
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$63e41e51-6a48-4292-9c24-ce36f7bb7cb6
+…
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$aec9aaea-b342-4e47-9708-8dc85016de4e
+…
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄÞ8éüÌ¿„2J$43883932-d223-415e-99fd-9751b3a63102
+h
+java:S1452V"&Remove usage of generic wildcard type.(øÜ¢8“¹¤Á„2J$aeb8ea25-5e90-47c2-bc2c-e6a3586c7c90
+	java:S125Ž"<This block of commented-out lines of code should be removed.(˜ú•Ë8óüÌ¿„2J$f13011d3-7720-462a-bce0-32455906d339

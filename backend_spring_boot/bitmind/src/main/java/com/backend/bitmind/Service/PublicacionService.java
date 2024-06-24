@@ -1,15 +1,18 @@
 package com.backend.bitmind.Service;
 
+import com.backend.bitmind.Dtos.PublicacionDTO;
 import com.backend.bitmind.Model.Carrera;
 import com.backend.bitmind.Model.Ciclo;
 import com.backend.bitmind.Model.Curso;
 import com.backend.bitmind.Model.Publicacion;
 import com.backend.bitmind.Repository.PublicacionRepository;
+import com.backend.bitmind.mapper.PublicacionMapper;
+import com.backend.bitmind.util.UrlUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PublicacionService {
@@ -17,16 +20,14 @@ public class PublicacionService {
     @Autowired
     private PublicacionRepository publicacionRepository;
 
-    // Inyecta tu repositorio de publicaciones y otros servicios necesarios
+    public List<PublicacionDTO> obtenerTodasLasPublicaciones() {
+        List<Publicacion> publicaciones = publicacionRepository.findAllByOrderByFechaCreacionDesc();
+        List<PublicacionDTO> publicacionesDTO = new ArrayList<>();
 
-    public List<Publicacion> obtenerTodasLasPublicaciones() {
-        List<Publicacion> publicaciones = publicacionRepository.findAll();
         for (Publicacion publicacion : publicaciones) {
-            String nombreArchivo = publicacion.getImagen();
-            String urlCompleta = "https://bucketbitmind.s3.amazonaws.com/" + nombreArchivo;
-            publicacion.setImagen(urlCompleta);
+            publicacionesDTO.add(PublicacionMapper.toDTO(publicacion));
         }
-        return publicaciones;
+        return publicacionesDTO;
     }
 
     public Publicacion obtenerPublicacionPorId(int id) {
@@ -41,6 +42,16 @@ public class PublicacionService {
         publicacionRepository.deleteById(id);
     }
 
+    //Incrementar Vistas
+    public void incrementarVistas(int idPublicacion) {
+        Publicacion publicacion = publicacionRepository.findById(idPublicacion).orElse(null);
+        if (publicacion != null) {
+            publicacion.incrementarVistas();
+            publicacionRepository.save(publicacion);
+        }
+    }
+
+    //Para los filtros
     public List<Publicacion> buscarPorTitulo(String titulo) {
         return publicacionRepository.findByTituloContaining(titulo);
     }

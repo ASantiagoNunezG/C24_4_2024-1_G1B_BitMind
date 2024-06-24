@@ -9,4 +9,7 @@ import java.util.List;
 @Repository
 public interface AnuncioRepository extends JpaRepository<Anuncio, Integer> {
     List<Anuncio> findByTituloContaining(String fragmento);
+
+    //Para mostrar la publicacion reciente
+    List<Anuncio> findAllByOrderByFechaCreacionDesc();
 }

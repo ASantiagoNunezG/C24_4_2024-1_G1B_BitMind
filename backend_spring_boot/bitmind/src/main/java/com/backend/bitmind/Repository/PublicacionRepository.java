@@ -20,4 +20,7 @@ public interface PublicacionRepository extends JpaRepository<Publicacion, Intege
 
     //Filtrar publicacion por curso
     List<Publicacion> findByCurso(Curso curso);
+
+    //Para mostrar el mas reciente
+    List<Publicacion> findAllByOrderByFechaCreacionDesc();
 }

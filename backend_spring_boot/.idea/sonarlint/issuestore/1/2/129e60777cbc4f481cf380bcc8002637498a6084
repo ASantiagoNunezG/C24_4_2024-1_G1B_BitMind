@@ -1,8 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘·Óµúÿÿÿÿ8¼¤ Àƒ2J$5f7a4e25-ecfb-4e47-94f7-ba19cc40bd4a
-„
-java:S1128"<Remove this unused import 'com.backend.bitmind.Model.Curso'.(÷Ô³§ÿÿÿÿÿ8äõþÁƒ2J$02e555c9-d476-438b-87e0-6c06bde9d978
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘·Óµúÿÿÿÿ8¼¤ Àƒ2J$aed65162-cc4b-441a-b87c-08b5ffd1b3b2
 †
-java:S1128">Remove this unused import 'com.backend.bitmind.Model.Usuario'.(¤‹šýÿÿÿÿ8äõþÁƒ2J$5ff7e27f-2c3d-497a-b2cb-f309fab44e79
-•
-java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonManagedReference'.(Æ˜µ8Â¤ Àƒ2J$19f4901d-526b-422d-afff-9d5653a768ed
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Carrera'.(‚¶öªÿÿÿÿÿ8Ö“›Á„2J$b77187ec-2681-4510-aba6-81e4841c764e
+
+java:S1128"<Remove this unused import 'com.backend.bitmind.Model.Ciclo'.(éò¤¤8Ö“›Á„2J$6b3b9715-d41c-47de-ba74-1fc3d673c6a0

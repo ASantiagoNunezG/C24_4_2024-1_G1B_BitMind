@@ -53,4 +53,8 @@ public class Publicacion {
     @OneToMany(mappedBy = "publicacion", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Archivo> archivos;
+
+    public void incrementarVistas() {
+        this.vistas++;
+    }
 }

@@ -1,15 +1,20 @@
 package com.backend.bitmind.Service;
 
+import com.backend.bitmind.Dtos.AnuncioDTO;
 import com.backend.bitmind.Model.Anuncio;
-import com.backend.bitmind.Model.Publicacion;
+
 import com.backend.bitmind.Repository.AnuncioRepository;
+import com.backend.bitmind.mapper.AnuncioMapper;
+import com.backend.bitmind.util.UrlUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class AnuncioService {
+
     @Autowired
     private AnuncioRepository anuncioRepository;
 
@@ -17,13 +22,14 @@ public class AnuncioService {
         return anuncioRepository.findByTituloContaining(fragmento);
     }
 
-    public List<Anuncio> obtenerTodosLosAnuncios() {
-        List<Anuncio> anuncios = anuncioRepository.findAll();
-            for (Anuncio anuncio : anuncios) {
-            String nombreArchivo = anuncio.getImagen();
-            String urlCompleta = "https://bucketbitmind.s3.amazonaws.com/" + nombreArchivo;
-            anuncio.setImagen(urlCompleta);
+    public List<AnuncioDTO> obtenerTodosLosAnuncios() {
+        List<Anuncio> anuncios = anuncioRepository.findAllByOrderByFechaCreacionDesc();
+        List<AnuncioDTO> anunciosDTO = new ArrayList<>();
+
+        for (Anuncio anuncio : anuncios) {
+            anunciosDTO.add(AnuncioMapper.toDTO(anuncio));
         }
-        return anuncios;
+
+        return anunciosDTO;
     }
 }
