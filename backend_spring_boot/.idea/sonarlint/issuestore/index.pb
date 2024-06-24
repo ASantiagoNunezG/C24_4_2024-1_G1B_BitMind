@@ -101,3 +101,9 @@ n
 >bitmind/src/main/java/com/backend/bitmind/Dtos/CarreraDTO.java,2\4\2435b30e220ffabe3dc982fbcb60596caa7579cd
 l
 <bitmind/src/main/java/com/backend/bitmind/Dtos/CicloDTO.java,4\0\408e2c50949e2b1f560a85032ac69ac9aeb1569b
+p
+@bitmind/src/main/java/com/backend/bitmind/jwt/UsuarioConfig.java,0\2\024e2bc3954a30e1f4a466901687332db87ba901
+v
+Fbitmind/src/main/java/com/backend/bitmind/jwt/UsuarioMangerConfig.java,3\0\3088338bb9ebf3a651ea5c0877adfb08c2a685cc
+v
+Fbitmind/src/main/java/com/backend/bitmind/jwt/DashboardController.java,4\4\44e5238401d27aca4d455ec781a6442809cc6504

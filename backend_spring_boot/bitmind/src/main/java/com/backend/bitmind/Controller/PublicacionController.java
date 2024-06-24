@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -88,14 +90,24 @@ public class PublicacionController {
         return ResponseEntity.ok().build();
     }
 
-
-
-    //Endpoint para obtener publicaciones por titulo
     @GetMapping("/buscar")
-    public ResponseEntity<List<Publicacion>> buscarPublicacionesPorTitulo(@RequestParam String titulo) {
+    public ResponseEntity<List<PublicacionDTO>> buscarPublicacionesPorTitulo(@RequestParam String titulo) {
         List<Publicacion> publicaciones = publicacionService.buscarPorTitulo(titulo);
-        return new ResponseEntity<>(publicaciones, HttpStatus.OK);
+
+        // Convertir lista de Publicacion a lista de PublicacionDTO
+        List<PublicacionDTO> publicacionesDTO = new ArrayList<>();
+        for (Publicacion publicacion : publicaciones) {
+            PublicacionDTO publicacionDTO = PublicacionMapper.toDTO(publicacion);
+            publicacionesDTO.add(publicacionDTO);
+        }
+
+        if (!publicacionesDTO.isEmpty()) {
+            return new ResponseEntity<>(publicacionesDTO, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
+
 
     // Endpoint para obtener publicaciones por carrera
     @GetMapping("/por-carrera/{idCarrera}")

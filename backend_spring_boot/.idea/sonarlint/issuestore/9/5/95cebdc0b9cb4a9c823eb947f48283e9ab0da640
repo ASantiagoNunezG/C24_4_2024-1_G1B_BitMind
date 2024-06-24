@@ -1,6 +1,13 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹íôÁJ$7ee93ae8-f834-4e8f-b821-9e637eda4cf5
-¢
-java:S1128"aRemove this unused import 'org.springframework.boot.autoconfigure.security.reactive.PathRequest'.(½è°ÔüÿÿÿÿJ$38972ff8-1ee7-478e-a1d1-ffdd0612101c
-­
-java:S1128"qRemove this unused import 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter'.(÷ìïŠJ$ca3d6552-90fb-454c-ba35-98f1aa5d42e8
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹íôÁ8ˆáŒÊ„2J$61742b60-17da-49c1-a405-cec2fe3ff02c
+ƒ	java:S1255"<This block of commented-out lines of code should be removed.(Ðäøûÿÿÿÿ8áŒÊ„2J$bfc74ef4-a65c-4995-808f-983c47ae7966
+©
+java:S1128"aRemove this unused import 'org.springframework.boot.autoconfigure.security.reactive.PathRequest'.(½è°Ôüÿÿÿÿ8Ž²Ê„2J$b574a8a6-c0f6-43ba-91f2-128c113c8db8
+‰
+java:S1128"FRemove this unused import 'org.springframework.core.annotation.Order'.(ÖŽ¨æ8Ž²Ê„2J$97a8ef29-3c06-41c8-bda1-6e8a32a132f6
+£
+java:S1128"[Remove this unused import 'org.springframework.security.config.http.SessionCreationPolicy'.(‚ÌÎîüÿÿÿÿ8Ž²Ê„2J$a67144f6-5fe0-4e3a-b331-f271b9a66159
+´
+java:S1128"qRemove this unused import 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter'.(÷ìïŠ8Ž²Ê„2J$4d6290df-92c4-4460-a8ba-eecb8b81539c
+Ÿ
+java:S1128"\Remove this unused import 'org.springframework.security.web.util.matcher.AndRequestMatcher'.(¿¥Ñ“8Ž²Ê„2J$8ccffd67-7222-4426-848b-7c44ba3de30e
