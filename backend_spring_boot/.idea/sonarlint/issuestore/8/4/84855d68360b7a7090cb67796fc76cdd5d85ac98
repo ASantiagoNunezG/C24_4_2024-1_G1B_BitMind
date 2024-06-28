@@ -1,4 +1,13 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿ8ŒÕ½„2J$783f4176-7842-4ad0-bc4a-1d5151b8a47f
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿ8ŒÕ½„2J$25e40599-0a27-4739-94c4-b70a280ef747
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8“ŒÕ½„2J$83d2c8ad-087c-46d6-ac11-aecc0fb534b7
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8“ŒÕ½„2J$19649aea-accc-4d2c-ac8e-a4470648eacb
+‰
+java:S1128"ARemove this unused import 'com.backend.bitmind.Model.Comentario'.(îÑ«†şÿÿÿÿ8ËÌˆÙ„2J$affc4f9b-40d2-4434-8af9-65ffa162e95d
+†
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Usuario'.(¤‹šıÿÿÿÿ8ËÌˆÙ„2J$d32a4b6c-d869-4453-8b07-3bb7e4bf77d7
+“
+java:S1128"PRemove this unused import 'com.backend.bitmind.Repository.ComentarioRepository'.(ÖÒêü8ËÌˆÙ„2J$fb06964d-bbd2-4ae9-95db-cbd647305656
+€
+java:S1128
+"=Remove this unused import 'com.backend.bitmind.util.UrlUtil'.(´¥Ä¹8ÌÌˆÙ„2J$c878e848-1589-48a2-966a-6917bb5b165d

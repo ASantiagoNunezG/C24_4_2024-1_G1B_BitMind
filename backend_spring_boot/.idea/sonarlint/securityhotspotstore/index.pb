@@ -73,8 +73,6 @@ u
 Ebitmind/src/main/java/com/backend/bitmind/Service/CarreraService.java,3\0\30e18951f879ef7a4513a1d7c8adfc996d51d65c
 r
 Bbitmind/src/main/java/com/backend/bitmind/Service/ForoService.java,8\4\84855d68360b7a7090cb67796fc76cdd5d85ac98
-o
-?bitmind/src/main/java/com/backend/bitmind/Dtos/AuthRequest.java,e\f\ef9783ae8d9d31f7b00e4a896344b61fa1545ea4
 k
 ;bitmind/src/main/java/com/backend/bitmind/util/UrlUtil.java,a\2\a2e581cccb01949280e7f31f600e4ff304d5f93a
 n
@@ -107,3 +105,9 @@ v
 Fbitmind/src/main/java/com/backend/bitmind/jwt/UsuarioMangerConfig.java,3\0\3088338bb9ebf3a651ea5c0877adfb08c2a685cc
 v
 Fbitmind/src/main/java/com/backend/bitmind/jwt/DashboardController.java,4\4\44e5238401d27aca4d455ec781a6442809cc6504
+s
+Cbitmind/src/main/java/com/backend/bitmind/Service/CursoService.java,1\a\1acafc77a942d445a6f6974427b831664acbdf20
+x
+Hbitmind/src/main/java/com/backend/bitmind/Service/ComentarioService.java,4\8\48573a67eabe5516aa4218fbbd266dc651daac4e
+q
+Abitmind/src/main/java/com/backend/bitmind/BitmindApplication.java,5\5\5571454e3a4ab2ed07a6687b1cb93bc0f1fe50c1
