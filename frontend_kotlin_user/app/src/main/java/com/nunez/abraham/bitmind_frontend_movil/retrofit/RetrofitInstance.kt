@@ -15,6 +15,8 @@ import java.time.LocalDateTime
 
 object RetrofitInstance {
     private const val BASE_URL = "http://192.168.18.13:8080/"
+    //private const val BASE_URL = "http://192.168.56.1:8080/"
+    //private const val BASE_URL = "http://10.200.173.225:8080/"
 
 
     @RequiresApi(Build.VERSION_CODES.O)

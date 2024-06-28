@@ -25,7 +25,7 @@ class AnuncioAdapter (private  val anuncios: List<Anuncio>): RecyclerView.Adapte
     @SuppressLint("ClickableViewAccessibility")
     class AnuncioViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        val titulo: TextView = itemView.findViewById(R.id.txttitulo)
+        val titulo:TextView = itemView.findViewById(R.id.txttitulo)
         val fechaCreacion: TextView = itemView.findViewById(R.id.fechaCreacion)
         val descripcion: TextView = itemView.findViewById(R.id.txtDescripcion)
         val horaCreacion: TextView = itemView.findViewById(R.id.horaCreacion)
