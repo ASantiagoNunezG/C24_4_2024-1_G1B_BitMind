@@ -14,6 +14,6 @@
         android:title="Foros"/>
     <item
         android:id="@+id/perfilFragment"
-        android:icon="@drawable/icons8_usuario"
-        android:title="Mi Perfil"/>
+        android:icon="@drawable/icons8_ia"
+        android:title="Asistente IA"/>
 </menu>

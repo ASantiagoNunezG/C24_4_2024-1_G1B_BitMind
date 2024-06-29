@@ -38,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
 
     //Despues de la presentacion me inicializa en la activity Main
     private fun goMainActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }

@@ -111,3 +111,7 @@ x
 Hbitmind/src/main/java/com/backend/bitmind/Service/ComentarioService.java,4\8\48573a67eabe5516aa4218fbbd266dc651daac4e
 q
 Abitmind/src/main/java/com/backend/bitmind/BitmindApplication.java,5\5\5571454e3a4ab2ed07a6687b1cb93bc0f1fe50c1
+x
+Hbitmind/src/main/java/com/backend/bitmind/Controller/Chatcontroller.java,e\5\e59e520b39dc2cc61714adfe8d6e68771ee2b836
+x
+Hbitmind/src/main/java/com/backend/bitmind/Controller/ChatController.java,d\5\d511e76348bba26687c6393e09ab40260e5a6a9b
