@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/nombreArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:text="Nombre del Archivo"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tipoArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:text="tipo"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/urlArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:text="url"
+        android:textColor="@color/black"
+        android:autoLink="web"
+        android:linksClickable="true"/>
+</LinearLayout>

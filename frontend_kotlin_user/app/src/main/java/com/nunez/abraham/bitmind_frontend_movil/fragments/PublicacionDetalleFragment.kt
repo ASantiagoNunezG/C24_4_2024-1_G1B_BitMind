@@ -10,6 +10,7 @@ import androidx.navigation.fragment.navArgs
 import com.nunez.abraham.bitmind_frontend_movil.R
 
 
+
 class PublicacionDetalleFragment : Fragment() {
 
     //private val args: PublicacionDetalleFragmentArgs by navArgs()

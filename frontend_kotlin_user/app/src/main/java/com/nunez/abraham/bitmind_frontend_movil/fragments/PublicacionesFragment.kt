@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.nunez.abraham.bitmind_frontend_movil.adapters.PublicacionAdapter
 import com.nunez.abraham.bitmind_frontend_movil.databinding.FragmentPublicacionesBinding
 import com.nunez.abraham.bitmind_frontend_movil.models.Publicacion
@@ -34,7 +35,7 @@ class PublicacionesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.recyclerViewPublicaciones.layoutManager = GridLayoutManager(requireContext(), 2) // 2 columnas
+        binding.recyclerViewPublicaciones.layoutManager = LinearLayoutManager(requireContext())
         publicacionAdapter = PublicacionAdapter(publicaciones)
         binding.recyclerViewPublicaciones.adapter = publicacionAdapter
 
@@ -42,6 +43,7 @@ class PublicacionesFragment : Fragment() {
         binding.nuevo.setOnClickListener {
             Toast.makeText(requireContext(), "Por ahora solo disponible en la aplicación Web", Toast.LENGTH_LONG).show()
         }
+
     }
 
     private fun loadPublicaciones() {
