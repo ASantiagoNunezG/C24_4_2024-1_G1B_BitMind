@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.nunez.abraham.bitmind_frontend_movil.adapters.AnuncioAdapter
 import com.nunez.abraham.bitmind_frontend_movil.databinding.FragmentAnunciosBinding
@@ -42,6 +43,9 @@ class AnunciosFragment : Fragment() {
         anuncioAdapter = AnuncioAdapter(anuncios)
         binding.recyclerViewAnuncios.adapter = anuncioAdapter
         loadAnuncios()
+        binding.nuevoAnuncio.setOnClickListener {
+            Toast.makeText(requireContext(), "Por ahora solo disponible en la aplicación Web", Toast.LENGTH_LONG).show()
+        }
     }
     private fun loadAnuncios(){
         CoroutineScope(Dispatchers.IO).launch {

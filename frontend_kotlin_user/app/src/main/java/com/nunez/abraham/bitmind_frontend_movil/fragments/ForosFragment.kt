@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.nunez.abraham.bitmind_frontend_movil.R
 import com.nunez.abraham.bitmind_frontend_movil.adapters.ForoAdapter
@@ -27,30 +28,31 @@ class ForosFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-
-        _binding = FragmentForosBinding.inflate(inflater,container,false)
+        _binding = FragmentForosBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.recyclerViewForos.layoutManager = LinearLayoutManager(requireContext())
-        foroAdapter = ForoAdapter(foros)
+        foroAdapter = ForoAdapter(requireContext(), foros)
         binding.recyclerViewForos.adapter = foroAdapter
         loadForos()
+        binding.nuevoForo.setOnClickListener {
+            Toast.makeText(requireContext(), "Por ahora solo disponible en la aplicación Web", Toast.LENGTH_LONG).show()
+        }
     }
 
-    private fun loadForos(){
+    private fun loadForos() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 val response = RetrofitInstance.foroApi.getForos()
-                withContext(Dispatchers.Main){
+                withContext(Dispatchers.Main) {
                     foros.clear()
                     foros.addAll(response)
                     foroAdapter.notifyDataSetChanged()
                 }
-            }catch (e: Exception){
+            } catch (e: Exception) {
                 e.printStackTrace()
             }
         }

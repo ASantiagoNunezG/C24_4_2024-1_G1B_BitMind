@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebViewClient
+import android.widget.Toast
 import com.nunez.abraham.bitmind_frontend_movil.IA.ChatRequest
 import com.nunez.abraham.bitmind_frontend_movil.IA.ChatResponse
 import com.nunez.abraham.bitmind_frontend_movil.IA.Message
@@ -33,11 +34,17 @@ class PerfilFragment : Fragment() {
 
         binding.sendMessageButton.setOnClickListener {
             val userMessage = binding.messageInput.text.toString()
-            sendMessageToApi(userMessage)
+            if (userMessage.isNotBlank()) {
+                sendMessageToApi(userMessage)
+                Toast.makeText(requireContext(), "Mensaje enviado", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(requireContext(), "El mensaje no puede estar vacío", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.sendCleanButton.setOnClickListener {
             binding.messageInput.text.clear()
+            Toast.makeText(requireContext(), "Texto limpiado", Toast.LENGTH_SHORT).show()
         }
     }
 

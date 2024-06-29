@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import com.nunez.abraham.bitmind_frontend_movil.adapters.PublicacionAdapter
 import com.nunez.abraham.bitmind_frontend_movil.databinding.FragmentPublicacionesBinding
@@ -38,6 +39,9 @@ class PublicacionesFragment : Fragment() {
         binding.recyclerViewPublicaciones.adapter = publicacionAdapter
 
         loadPublicaciones()
+        binding.nuevo.setOnClickListener {
+            Toast.makeText(requireContext(), "Por ahora solo disponible en la aplicación Web", Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun loadPublicaciones() {
