@@ -16,7 +16,7 @@ object RetrofitInstanceIA {
         .addInterceptor(loggingInterceptor)
         .addInterceptor { chain ->
             val request = chain.request().newBuilder()
-                .addHeader("Authorization", "Bearer ")
+                .addHeader("Authorization", "Bearer ") //Aqui va la Key de OpenIA
                 .addHeader("Content-Type", "application/json")
                 .build()
             chain.proceed(request)
