@@ -1,7 +1,4 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8ä•¿„2J$19d4c7d4-e364-4856-9808-a9404893e9d3
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8áÙä†2
-X	java:S125"<This block of commented-out lines of code should be removed.(ØÀÎ8“áÙä†2
-V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8•áÙä†2
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8ä•¿„2J$a198c4e8-8e20-4eb8-9c5f-0d98f88286a7
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8áÙä†2J$28e4c9b9-bb89-4ae9-8de7-4da821fc578a

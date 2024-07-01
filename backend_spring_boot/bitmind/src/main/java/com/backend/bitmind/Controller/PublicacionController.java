@@ -1,16 +1,22 @@
 package com.backend.bitmind.Controller;
 
+import com.backend.bitmind.Dtos.CarreraDTO;
+import com.backend.bitmind.Dtos.CursoDTO;
 import com.backend.bitmind.Dtos.PublicacionDTO;
 import com.backend.bitmind.Model.*;
 import com.backend.bitmind.Service.*;
+import com.backend.bitmind.mapper.CarreraMapper;
+import com.backend.bitmind.mapper.CursoMapper;
 import com.backend.bitmind.mapper.PublicacionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
@@ -58,32 +64,37 @@ public class PublicacionController {
         }
     }
 
-    //Endpoint para guardar una nueva publicacion, crear
-    @PostMapping
-    public ResponseEntity<Publicacion> guardarPublicacion(@RequestBody Publicacion publicacion) {
-        Publicacion nuevaPublicacion = publicacionService.guardarPublicacion(publicacion);
+
+    //Endpoint para guardar publicacion
+    @PostMapping("/guardar")
+    public ResponseEntity<Publicacion> guardarPublicacion(@RequestBody Publicacion publicacion, Principal principal) {
+        String correoUsuario = principal.getName();
+        Publicacion nuevaPublicacion = publicacionService.guardarPublicacion(publicacion, correoUsuario);
         return new ResponseEntity<>(nuevaPublicacion, HttpStatus.CREATED);
     }
 
-    //Endpint para actualizar una publicacion
     @PutMapping("/{id}")
-    public ResponseEntity<Publicacion> actualizarPublicacion(@PathVariable int id, @RequestBody Publicacion publicacion) {
-        Publicacion publicacionExistente = publicacionService.obtenerPublicacionPorId(id);
-        if (publicacionExistente != null) {
-            publicacion.setIdPublicacion(id);
-            Publicacion publicacionActualizada = publicacionService.guardarPublicacion(publicacion);
+    public ResponseEntity<Publicacion> actualizarPublicacion(@PathVariable int id, @RequestBody Publicacion publicacion, Principal principal) {
+        String correoUsuario = principal.getName();
+        try {
+            Publicacion publicacionActualizada = publicacionService.actualizarPublicacion(publicacion, id, correoUsuario);
             return new ResponseEntity<>(publicacionActualizada, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>(HttpStatus.FORBIDDEN);
         }
     }
-    //endpoint para eliminar una publicacion
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarPublicacion(@PathVariable int id) {
-        publicacionService.eliminarPublicacion(id);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity<Void> eliminarPublicacion(@PathVariable int id, Principal principal) {
+        String correoUsuario = principal.getName();
+        try {
+            publicacionService.eliminarPublicacion(id, correoUsuario);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+        }
     }
-    //Endpoint para las vistas
+
     @PostMapping("/{id}/addview")
     public ResponseEntity<?> incrementarVistas(@PathVariable int id) {
         publicacionService.incrementarVistas(id);
@@ -93,14 +104,10 @@ public class PublicacionController {
     @GetMapping("/buscar")
     public ResponseEntity<List<PublicacionDTO>> buscarPublicacionesPorTitulo(@RequestParam String titulo) {
         List<Publicacion> publicaciones = publicacionService.buscarPorTitulo(titulo);
-
-        // Convertir lista de Publicacion a lista de PublicacionDTO
         List<PublicacionDTO> publicacionesDTO = new ArrayList<>();
         for (Publicacion publicacion : publicaciones) {
-            PublicacionDTO publicacionDTO = PublicacionMapper.toDTO(publicacion);
-            publicacionesDTO.add(publicacionDTO);
+            publicacionesDTO.add(PublicacionMapper.toDTO(publicacion));
         }
-
         if (!publicacionesDTO.isEmpty()) {
             return new ResponseEntity<>(publicacionesDTO, HttpStatus.OK);
         } else {
@@ -108,64 +115,47 @@ public class PublicacionController {
         }
     }
 
-
-    // Endpoint para obtener publicaciones por carrera
     @GetMapping("/por-carrera/{idCarrera}")
-    public List<Publicacion> obtenerPublicacionesPorCarrera(@PathVariable int idCarrera) {
+    public ResponseEntity<List<PublicacionDTO>> obtenerPublicacionesPorCarrera(@PathVariable int idCarrera) {
         Carrera carrera = carreraService.obtenerCarreraPorId(idCarrera)
                 .orElseThrow(() -> new RuntimeException("Carrera no encontrada"));
-        return publicacionService.obtenerPublicacionesPorCarrera(carrera);
+        List<PublicacionDTO> publicaciones = publicacionService.obtenerPublicacionesPorCarrera(carrera);
+        return new ResponseEntity<>(publicaciones, HttpStatus.OK);
     }
 
-    // Endpoint para obtener publicaciones por ciclo
     @GetMapping("/por-ciclo/{idCiclo}")
-    public List<Publicacion> obtenerPublicacionesPorCiclo(@PathVariable int idCiclo) {
+    public ResponseEntity<List<PublicacionDTO>> obtenerPublicacionesPorCiclo(@PathVariable int idCiclo) {
         Ciclo ciclo = cicloService.obtenerCicloPorId(idCiclo)
                 .orElseThrow(() -> new RuntimeException("Ciclo no encontrado"));
-        return publicacionService.obtenerPublicacionesPorCiclo(ciclo);
+        List<PublicacionDTO> publicaciones = publicacionService.obtenerPublicacionesPorCiclo(ciclo);
+        return new ResponseEntity<>(publicaciones, HttpStatus.OK);
     }
 
-    // Endpoint para obtener publicaciones por curso
     @GetMapping("/por-curso/{idCurso}")
-    public List<Publicacion> obtenerPublicacionesPorCurso(@PathVariable int idCurso) {
+    public ResponseEntity<List<PublicacionDTO>> obtenerPublicacionesPorCurso(@PathVariable int idCurso) {
         Curso curso = cursoService.obtenerCursoPorId(idCurso)
                 .orElseThrow(() -> new RuntimeException("Curso no encontrado"));
-        return publicacionService.obtenerPublicacionesPorCurso(curso);
+        List<PublicacionDTO> publicaciones = publicacionService.obtenerPublicacionesPorCurso(curso);
+        return new ResponseEntity<>(publicaciones, HttpStatus.OK);
     }
 
-
-    // Endpoint para obtener los cursos por ciclo
     @GetMapping("/cursos-por-ciclo/{idCiclo}")
-    public List<Curso> obtenerCursosPorCiclo(@PathVariable int idCiclo) {
+    public ResponseEntity<List<CursoDTO>> obtenerCursosPorCiclo(@PathVariable int idCiclo) {
         Ciclo ciclo = cicloService.obtenerCicloPorId(idCiclo)
                 .orElseThrow(() -> new RuntimeException("Ciclo no encontrado"));
-        return cursoService.obtenerCursosPorCiclo(ciclo);
+        List<Curso> cursos = cursoService.obtenerCursosPorCiclo(ciclo);
+        List<CursoDTO> cursosDTO = cursos.stream()
+                .map(CursoMapper::toDTO)
+                .collect(Collectors.toList());
+        return new ResponseEntity<>(cursosDTO, HttpStatus.OK);
     }
-
 
     @GetMapping("/carreras")
-    public ResponseEntity<List<Carrera>> obtenerCarreras() {
+    public ResponseEntity<List<CarreraDTO>> obtenerCarreras() {
         List<Carrera> carreras = carreraService.obtenerTodasLasCarreras();
-        return new ResponseEntity<>(carreras, HttpStatus.OK);
+        List<CarreraDTO> carrerasDTO = carreras.stream()
+                .map(CarreraMapper::toDTO)
+                .collect(Collectors.toList());
+        return new ResponseEntity<>(carrerasDTO, HttpStatus.OK);
     }
-    /*
-    // Endpoint para guardar una nueva publicación
-    @PostMapping
-    public ResponseEntity<Publicacion> guardarPublicacion(@RequestHeader("Authorization") String token, @RequestBody Publicacion publicacion) {
-        // Extraer el nombre de usuario del token
-        String username = jwtService.extractUsername(token.substring(7)); // Suponiendo que el token comienza con "Bearer "
-
-        // Obtener el usuario por su nombre de usuario
-        UserInfoService usuario = (UserInfoService) userInfoService.loadUserByUsername(username);
-        if (usuario == null) {
-            return new ResponseEntity<>("Usuario no encontrado", HttpStatus.BAD_REQUEST);
-        }
-
-        // Asignar el usuario a la publicación
-        publicacion.setUsuario(usuario);
-
-        // Guardar la publicación
-        Publicacion nuevaPublicacion = publicacionService.guardarPublicacion(publicacion);
-        return new ResponseEntity<>(nuevaPublicacion, HttpStatus.CREATED);
-    }*/
 }

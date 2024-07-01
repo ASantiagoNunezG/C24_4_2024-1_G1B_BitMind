@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.security.Principal;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -26,11 +24,6 @@ public class AnuncioController {
     }
 
     // Endpoint para obtener todos los anuncios
-
-    /*public ResponseEntity<List<Anuncio>> obtenerTodosLosAnuncios() {
-        List<Anuncio> anuncios = anuncioService.obtenerTodosLosAnuncios();
-        return new ResponseEntity<>(anuncios, HttpStatus.OK);
-    }*/
     @GetMapping
     public ResponseEntity<List<AnuncioDTO>> obtenerTodosLosAnuncios() {
         List<AnuncioDTO> anunciosDTO = anuncioService.obtenerTodosLosAnuncios();

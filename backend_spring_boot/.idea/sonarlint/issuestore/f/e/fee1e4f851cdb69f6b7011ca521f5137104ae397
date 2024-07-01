@@ -1,0 +1,10 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿ8ıÍŸç†2J$8406afbd-f2ea-41fb-b4fb-452353984415
+	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(ç·»ÿùÿÿÿÿ8¶Æè†2J$06ff1eb2-a501-47b1-8273-db8abfd07b70
+ˆ	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(ı×º‰8¶Æè†2J$183d3ffd-69dc-438e-a4f1-6fb8651fe86a
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¸Æè†2J$84d46dfe-dd86-49c1-b179-d445d7c3a1d5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¸Æè†2J$1db41be3-33a9-4573-91e6-3df4b426e771
+€
+java:S1128"=Remove this unused import 'com.backend.bitmind.util.UrlUtil'.(´¥Ä¹8¶ğè†2J$0ecc39fb-1bb0-4c87-aaef-b3141d519214

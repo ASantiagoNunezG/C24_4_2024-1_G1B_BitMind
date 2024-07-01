@@ -1,18 +1,18 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$7980825f-99af-435f-b9c8-ff182e614d95
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$d6290a8e-362e-494b-8dbf-12c31fdfc6a1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$decea753-0fe4-4acb-b905-d298418fe87e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$cb9db764-e085-429b-95e0-75a54377ec60
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$abf6ea45-1f0a-405b-9962-afd1aafc9411
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$daeac582-980e-4967-8aad-13622fd26f7e
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$475c05bb-66a7-43de-9f06-f1cd4b28c737
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$cfa9a1bd-ecf0-4e5e-9026-baad5d77e3b9
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$084b180f-c3ac-4b66-b274-27d435356f5e
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$c4514248-250b-47c5-90b7-07937dfbbc56
 …
-java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$2bd364cd-1471-4023-9876-a7c7a7e941cd
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$1a1c2fba-ef66-4c0c-9bc0-88770810388e
 …
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$a629945e-c8ca-46ef-a0cf-77b5e8bcd461
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$d5bc43c7-b84a-49b2-9389-ae72cbcf088e
 …
-java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÛÉä†2J$41de49b4-db1d-4cd7-bd57-eb558fc05aa3
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÛÉä†2J$d6a7a627-c97b-4a33-8b4b-642bcd30676e
 h
-java:S1452X"&Remove usage of generic wildcard type.(øÜ¢8‹€Ü‘†2J$32be716f-23e3-414e-9882-9cd536a16e82
+java:S1452c"&Remove usage of generic wildcard type.(øÜ¢8óÚ«è†2J$d3ad04dc-a2c7-45f0-850a-6d072307e350

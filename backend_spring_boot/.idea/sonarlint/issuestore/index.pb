@@ -131,3 +131,7 @@ Sbitmind/src/main/java/com/backend/bitmind/Controller/Public/AnuncioMController.
 Pbitmind/src/main/java/com/backend/bitmind/Controller/Public/ForoMController.java,3\e\3e04809f3405570a221e1b405bc648f9ad2a9024
 ‡
 Wbitmind/src/main/java/com/backend/bitmind/Controller/Public/PublicacionMController.java,8\2\8293912288657e3cb1f690efcdcc6d9c60b78fcc
+q
+Abitmind/src/main/java/com/backend/bitmind/mapper/CursoMapper.java,2\1\21404808b0e33d0a2f6f96034b768d6cfd5f4b94
+s
+Cbitmind/src/main/java/com/backend/bitmind/mapper/CarreraMapper.java,1\4\14ea207a4baa8d394c303f09567491649a8c3047
