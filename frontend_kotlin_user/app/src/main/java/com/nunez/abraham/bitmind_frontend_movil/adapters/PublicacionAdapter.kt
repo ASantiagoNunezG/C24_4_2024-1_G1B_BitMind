@@ -41,6 +41,7 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) : Recycle
         val carrera: TextView = itemView.findViewById(R.id.carrera)
         val ciclo: TextView = itemView.findViewById(R.id.ciclo)
         val curso: TextView = itemView.findViewById(R.id.curso)
+        val usuario: TextView = itemView.findViewById(R.id.usuarioNombre)
         init {
             btnVerMas.setOnClickListener {
                 val currentPublicacion = publicaciones[adapterPosition]
@@ -67,6 +68,7 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) : Recycle
         holder.ciclo.text = "Ciclo: ${publicacion.ciclo.nombre}"
         holder.curso.text = "Curso: ${publicacion.curso.nombre}"
         holder.descripcion.text = publicacion.descripcion
+        holder.usuario.text = "Usuario: ${publicacion.usuario.nombres}"
 
         Glide.with(holder.itemView)
             .load(publicacion.imagen)

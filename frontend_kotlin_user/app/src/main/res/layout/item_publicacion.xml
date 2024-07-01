@@ -11,7 +11,13 @@
         android:orientation="vertical"
         android:padding="10dp"
         android:background="@drawable/border2">
-
+        <TextView
+            android:id="@+id/usuarioNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="usuario"
+            android:gravity="end"
+            android:textColor="#03A9F4"/>
         <ImageView
             android:id="@+id/imagenPublicacion"
             android:layout_width="wrap_content"
@@ -82,7 +88,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/black"/>
         <LinearLayout
-            android:layout_marginVertical="10dp"
+            android:layout_marginVertical="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -110,7 +116,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DESCRIPCIÓN"
-            android:textColor="@color/brunswick_green"
+            android:layout_marginTop="3dp"
+            android:textSize="17sp"
+            android:textColor="@color/dark_green"
             android:gravity="center"/>
         <ScrollView
             android:layout_marginTop="10dp"
@@ -135,12 +143,13 @@
                 android:layout_height="wrap_content"
                 android:text="ARCHIVOS"
                 android:layout_gravity="center"
-                android:textSize="15sp"
+                android:textSize="17sp"
                 android:textColor="@color/dark_green"
                 android:layout_marginBottom="5dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#009688"
                 android:text="Nota:Manten pulsado la URL para copiar al portapapeles."/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewArchivos"
