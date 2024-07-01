@@ -4,6 +4,6 @@ import com.nunez.abraham.bitmind_frontend_movil.models.Anuncio
 import retrofit2.http.GET
 
 interface AnuncioApi {
-    @GET("anuncios")
+    @GET("anunciosM")
     suspend fun getAnuncios(): List<Anuncio>
 }

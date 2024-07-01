@@ -6,13 +6,13 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface PublicacionApi {
-    @GET("publicaciones")
+    @GET("publicacionesM")
     suspend fun getPublicaciones(): List<Publicacion>
 
-    @POST("publicaciones/{id}/addview")
+    @POST("publicacionesM/{id}/addview")
     suspend fun incrementarVista(@Path("id") id: Int)
 
-    @GET("publicaciones/{id}")
+    @GET("publicacionesM/{id}")
     suspend fun getPublicacion(@Path("id") id: Int)
 
 }
