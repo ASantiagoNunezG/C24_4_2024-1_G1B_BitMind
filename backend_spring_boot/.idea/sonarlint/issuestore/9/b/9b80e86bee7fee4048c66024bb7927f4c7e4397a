@@ -1,18 +1,22 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$d6290a8e-362e-494b-8dbf-12c31fdfc6a1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$ecce2624-a9e0-49c8-bc9f-b6173800338b
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$cb9db764-e085-429b-95e0-75a54377ec60
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$7d921bd9-9a8c-4d6e-ac20-60d64c0162db
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$daeac582-980e-4967-8aad-13622fd26f7e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÿÛ‘†2J$4a87c0aa-6b70-43ca-948c-2cd17df5569f
 …
-java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$cfa9a1bd-ecf0-4e5e-9026-baad5d77e3b9
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$f771553d-f00d-40c6-83ff-490168a0dfcb
 …
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$c4514248-250b-47c5-90b7-07937dfbbc56
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$cddb4e0e-12be-407b-9973-801ebb951236
 …
-java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$1a1c2fba-ef66-4c0c-9bc0-88770810388e
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$176036bc-8609-453b-90fe-3bb47e76e4ff
 …
-java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$d5bc43c7-b84a-49b2-9389-ae72cbcf088e
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8÷ÿÛ‘†2J$5d47edaf-b51a-4abe-b6e8-3bb5c9a6a701
 …
-java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÛÉä†2J$d6a7a627-c97b-4a33-8b4b-642bcd30676e
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÛÉä†2J$4e7659f0-64e7-483e-b1b3-0f1cf00f2647
 h
-java:S1452c"&Remove usage of generic wildcard type.(øÜ¢8óÚ«è†2J$d3ad04dc-a2c7-45f0-850a-6d072307e350
+java:S1452c"&Remove usage of generic wildcard type.(øÜ¢8óÚ«è†2J$ca0d4a3b-1cb8-4417-9a07-4cdefd9c09ea
+˜
+java:S6204•"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Õ¬Äë†2
+˜
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ä¬Äë†2

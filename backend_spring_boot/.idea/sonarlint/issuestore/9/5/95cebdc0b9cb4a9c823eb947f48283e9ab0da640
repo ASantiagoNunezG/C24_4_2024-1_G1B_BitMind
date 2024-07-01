@@ -1,13 +1,13 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹íôÁ8İÍä†2
-_
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8“İÍä†2
-|
-java:S3305#"ZInject this field value directly into "securityFilterChain", the only method that uses it.(²Ëøùÿÿÿÿ8“İÍä†2
-]	java:S125,"<This block of commented-out lines of code should be removed.(Ğäøûÿÿÿÿ8—İÍä†2
-
-java:S1128"rRemove this unused import 'org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer'.(Ç¼Î8›İÍä†2
-}
-java:S1128"`Remove this unused import 'org.springframework.security.web.util.matcher.AntPathRequestMatcher'.(¼¸ö8›İÍä†2
-u
-java:S1128"XRemove this unused import 'org.springframework.security.config.Customizer.withDefaults'.(ÃÒş†8›İÍä†2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹íôÁ8İÍä†2J$ff64aaed-4880-4cc6-97f9-3734c8978b66
+…
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8“İÍä†2J$ba38cde8-9c1c-4d5e-a797-c4d166d24ed9
+¢
+java:S3305#"ZInject this field value directly into "securityFilterChain", the only method that uses it.(²Ëøùÿÿÿÿ8“İÍä†2J$ebd8ce50-a88f-47bd-bb8f-90288e1b054c
+ƒ	java:S125,"<This block of commented-out lines of code should be removed.(Ğäøûÿÿÿÿ8—İÍä†2J$7a616d8e-10e7-47f8-b759-2d5b36a9171b
+µ
+java:S1128"rRemove this unused import 'org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer'.(Ç¼Î8›İÍä†2J$95de8ae8-563f-45e9-92c3-ec0e32b579f7
+£
+java:S1128"`Remove this unused import 'org.springframework.security.web.util.matcher.AntPathRequestMatcher'.(¼¸ö8›İÍä†2J$b5cb6324-3dc4-4fba-8c97-105ceb66c905
+›
+java:S1128"XRemove this unused import 'org.springframework.security.config.Customizer.withDefaults'.(ÃÒş†8›İÍä†2J$1d22e552-6c3c-4d03-984f-b4c811bfe0e9

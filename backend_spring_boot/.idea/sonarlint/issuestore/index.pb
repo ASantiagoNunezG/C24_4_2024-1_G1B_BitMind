@@ -135,3 +135,7 @@ q
 Abitmind/src/main/java/com/backend/bitmind/mapper/CursoMapper.java,2\1\21404808b0e33d0a2f6f96034b768d6cfd5f4b94
 s
 Cbitmind/src/main/java/com/backend/bitmind/mapper/CarreraMapper.java,1\4\14ea207a4baa8d394c303f09567491649a8c3047
+u
+Ebitmind/src/main/java/com/backend/bitmind/Service/ArchivoService.java,c\a\ca3c974fa507f4ecd7d8cd82620ab8964c2e8838
+s
+Cbitmind/src/main/java/com/backend/bitmind/mapper/ArchivoMapper.java,8\d\8d8233d07993c3cbe6419f8c5eaca290047817e6

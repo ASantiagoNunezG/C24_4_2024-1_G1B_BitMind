@@ -1,4 +1,6 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿJ$ca576a62-9e55-4506-bff9-1d6e361bc8e5
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ö´Øä†2
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿJ$011003ae-40fe-40a5-b55c-a71fa8f8090e
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8³Ç ê†2J$b7eb49b6-5dd2-4efb-b955-5a49ebe2fe85
+†
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Archivo'.(â™•þúÿÿÿÿ8ê¥²ë†2J$86ba9c52-6b0c-40f9-80ee-d6f071154c9f
