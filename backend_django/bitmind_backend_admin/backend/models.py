@@ -6,7 +6,7 @@ class Usuario(models.Model):
     nombres = models.CharField(max_length=255)
     correo = models.EmailField(unique=True)
     clave = models.CharField(max_length=255)
-    imagen = models.ImageField(upload_to='')
+    imagen = models.ImageField(upload_to='', null=True, blank=True)
 
     class Meta:
         managed = True
@@ -79,7 +79,7 @@ class Anuncio(models.Model):
     id_anuncio = models.AutoField(primary_key=True, db_column="id_anuncio")
     titulo = models.CharField(max_length=255)
     descripcion = models.TextField()
-    imagen = models.ImageField(upload_to='')
+    imagen = models.ImageField(upload_to='', null=True, blank=True)
     fecha_creacion = models.DateTimeField()
     id_usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, db_column='id_usuario')
 
@@ -92,7 +92,7 @@ class Publicacion(models.Model):
     id_publicacion = models.AutoField(primary_key=True, db_column="id_publicacion")
     titulo = models.CharField(max_length=255)
     descripcion = models.TextField()
-    imagen = models.ImageField(upload_to='')
+    imagen = models.ImageField(upload_to='', null=True, blank=True)
     vistas = models.IntegerField(default=0)
     fecha_creacion = models.DateTimeField()
     fecha_modificacion = models.DateTimeField()
@@ -109,7 +109,7 @@ class Publicacion(models.Model):
 class Archivo(models.Model):
     id_archivo = models.AutoField(primary_key=True, db_column="id_archivo")
     nombre = models.CharField(max_length=255)
-    url = models.FileField(upload_to='')
+    url = models.FileField(upload_to='', null=True, blank=True)
     tipo = models.CharField(max_length=100)
     id_publicacion = models.ForeignKey(Publicacion, on_delete=models.CASCADE, db_column='id_publicacion')
 

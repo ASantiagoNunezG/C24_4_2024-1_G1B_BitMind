@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,13 +41,14 @@ INSTALLED_APPS = [
     'backend',
     'rest_framework',
     'corsheaders',
+    'rest_framework_simplejwt',
     'storages'
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -122,6 +124,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
 
 #Configuraciones para la base de datos
 DATABASES = {
@@ -152,9 +159,14 @@ DATABASES = {
 #MEDIA_URL = '/media/'
 
 #Listo para trabajar con REACT
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Agrega el dominio de tu frontend React aquí
-]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ["http://localhost:5173"]
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=1400),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}
 
 #AWS S3
 AWS_ACCESS_KEY_ID = 'AKIAYS2NTYQS5TB37ZV3'
