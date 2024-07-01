@@ -139,3 +139,5 @@ u
 Ebitmind/src/main/java/com/backend/bitmind/Service/ArchivoService.java,c\a\ca3c974fa507f4ecd7d8cd82620ab8964c2e8838
 s
 Cbitmind/src/main/java/com/backend/bitmind/mapper/ArchivoMapper.java,8\d\8d8233d07993c3cbe6419f8c5eaca290047817e6
+q
+Abitmind/src/main/java/com/backend/bitmind/mapper/CicloMapper.java,b\6\b61f05eea65f9424b4b5b585427f969ccda0457b

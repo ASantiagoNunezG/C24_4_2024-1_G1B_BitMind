@@ -1,11 +1,13 @@
 package com.backend.bitmind.Controller;
 
 import com.backend.bitmind.Dtos.CarreraDTO;
+import com.backend.bitmind.Dtos.CicloDTO;
 import com.backend.bitmind.Dtos.CursoDTO;
 import com.backend.bitmind.Dtos.PublicacionDTO;
 import com.backend.bitmind.Model.*;
 import com.backend.bitmind.Service.*;
 import com.backend.bitmind.mapper.CarreraMapper;
+import com.backend.bitmind.mapper.CicloMapper;
 import com.backend.bitmind.mapper.CursoMapper;
 import com.backend.bitmind.mapper.PublicacionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -150,12 +152,5 @@ public class PublicacionController {
         return new ResponseEntity<>(cursosDTO, HttpStatus.OK);
     }
 
-    @GetMapping("/carreras")
-    public ResponseEntity<List<CarreraDTO>> obtenerCarreras() {
-        List<Carrera> carreras = carreraService.obtenerTodasLasCarreras();
-        List<CarreraDTO> carrerasDTO = carreras.stream()
-                .map(CarreraMapper::toDTO)
-                .collect(Collectors.toList());
-        return new ResponseEntity<>(carrerasDTO, HttpStatus.OK);
-    }
+
 }

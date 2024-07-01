@@ -1,11 +1,22 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8Õ§®â†2J$5b2fbba0-5ac2-469d-8927-57f6c95f0555
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8Õ§®â†2J$036d68eb-edb7-4c38-8add-1dede7993471
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$c886cd40-86be-40e4-8a65-4a07b6c36446
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$c17efbf7-8673-4d00-b77e-dcd66ee8be9b
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$8eb96e78-4d24-4a65-9ec8-13a69e71e859
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$334a334f-df32-46d3-8967-fa6574c56302
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$84df4f48-88dc-4e48-bf3b-c0014c6b1101
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø§®â†2J$f9aa9f49-9716-426d-88f4-eef5f671cd00
+_
+java:S6813T"BRemove this field injection and use constructor injection instead.(êæÄŞ8şÓóî†2
+_
+java:S6813W"BRemove this field injection and use constructor injection instead.(êæÄŞ8şÓóî†2
+_
+java:S6813Z"BRemove this field injection and use constructor injection instead.(êæÄŞ8şÓóî†2
+½
+java:S6204a"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8œÒñî†2J$5364c104-64e2-4705-af98-193adbae174f
+½
+java:S6204j"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8œÒñî†2J$08a613bd-e0ba-4f6e-9942-739efe75a1a2
+½
+java:S6204s"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Òñî†2J$49f481fa-c5fa-4b70-a419-66c6b8254ec4
 w
-java:S1128
-"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8Œœøé†2
+java:S1128"URemove this unused import 'org.springframework.security.access.prepost.PreAuthorize'.(ˆ†×ùÿÿÿÿ8…Ôóî†2

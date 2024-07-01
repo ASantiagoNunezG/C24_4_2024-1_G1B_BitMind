@@ -1,6 +1,6 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿJ$c352f069-30e4-4435-9582-8e1d0de55aa4
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$a9334f91-e417-4e44-a184-c7cdb884f968
-`
-java:S1128">Remove this unused import 'com.backend.bitmind.Model.Carrera'.(‚¶öªÿÿÿÿÿ8•Â«Áƒ2
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß¶ùçúÿÿÿÿJ$aa9f28fe-803b-4019-8f82-a9c4fa342b5b
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8†óÝî†2
+†
+java:S1128">Remove this unused import 'com.backend.bitmind.Model.Carrera'.(‚¶öªÿÿÿÿÿ8•Â«Áƒ2J$eb3943ab-b199-4b71-9568-663f01430f78

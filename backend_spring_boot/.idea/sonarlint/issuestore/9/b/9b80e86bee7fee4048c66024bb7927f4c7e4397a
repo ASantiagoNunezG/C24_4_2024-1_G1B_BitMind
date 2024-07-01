@@ -1,22 +1,29 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$ecce2624-a9e0-49c8-bc9f-b6173800338b
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ù“ üÿÿÿÿ8íÿÛ‘†2J$6cfbf121-b571-4594-943a-3eb339535903
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8õÿÛ‘†2J$7d921bd9-9a8c-4d6e-ac20-60d64c0162db
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$f798720e-cc5d-4c8a-b474-7b24c9fa8d8d
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8õÿÛ‘†2J$4a87c0aa-6b70-43ca-948c-2cd17df5569f
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$9c5f8592-8b2b-429f-8978-a1fa9655a9e8
 …
-java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄÞ8÷ÿÛ‘†2J$f771553d-f00d-40c6-83ff-490168a0dfcb
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$8a3ea5b6-592e-49fe-9f5e-f8d57c04067e
 …
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄÞ8÷ÿÛ‘†2J$cddb4e0e-12be-407b-9973-801ebb951236
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$fb6da7f3-86ed-44a9-bafe-a24a0cd47b21
 …
-java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄÞ8÷ÿÛ‘†2J$176036bc-8609-453b-90fe-3bb47e76e4ff
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$480f1188-706f-4f5d-9ab5-15f0ef2d5cc5
 …
-java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄÞ8÷ÿÛ‘†2J$5d47edaf-b51a-4abe-b6e8-3bb5c9a6a701
+java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$560fd26c-17e5-44e5-9c49-926abcbb2ece
 …
-java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄÞ8ÛÉä†2J$4e7659f0-64e7-483e-b1b3-0f1cf00f2647
+java:S6813."BRemove this field injection and use constructor injection instead.(êæÄÞ8—ÍÖî†2J$f6df69a2-6965-4e03-9788-863228b2b9a4
 h
-java:S1452c"&Remove usage of generic wildcard type.(øÜ¢8óÚ«è†2J$ca0d4a3b-1cb8-4417-9a07-4cdefd9c09ea
-˜
-java:S6204•"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Õ¬Äë†2
-˜
-java:S6204ž"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ä¬Äë†2
+java:S1452e"&Remove usage of generic wildcard type.(øÜ¢8ÍÖî†2J$efdc1f23-a20a-4b47-a007-eb53acb06473
+¾
+java:S6204—"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¡ÍÖî†2J$ae92368d-3b59-43c2-ba7c-19b48f1fb2e0
+ƒ
+java:S1128"@Remove this unused import 'com.backend.bitmind.Dtos.CarreraDTO'.(¢ê€¨8žýðî†2J$fa622782-1f6e-403a-8ebb-423fd463fee5
+
+java:S1128">Remove this unused import 'com.backend.bitmind.Dtos.CicloDTO'.(Áé§±8žýðî†2J$bd6f2bf3-fc38-4691-b534-9b6112d1595a
+ˆ
+java:S1128	"ERemove this unused import 'com.backend.bitmind.mapper.CarreraMapper'.(ÖÉ¥˜8žýðî†2J$58c31ac9-7a2b-46b4-95c2-16ce5259e6df
+‹
+java:S1128
+"CRemove this unused import 'com.backend.bitmind.mapper.CicloMapper'.(éÕ­Ìûÿÿÿÿ8žýðî†2J$295915a5-26c8-4683-ac69-7a845f17b843
