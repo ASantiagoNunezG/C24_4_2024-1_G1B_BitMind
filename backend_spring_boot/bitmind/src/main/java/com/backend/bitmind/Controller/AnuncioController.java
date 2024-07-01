@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -15,7 +17,8 @@ import java.util.List;
 @RequestMapping("/anuncios")
 public class AnuncioController {
 
-    private final AnuncioService anuncioService;
+    @Autowired
+    private AnuncioService anuncioService;
 
     @Autowired
     public AnuncioController(AnuncioService anuncioService) {
@@ -42,4 +45,10 @@ public class AnuncioController {
     }
 
     // Otros endpoints para crear, actualizar, eliminar anuncios, etc.
+    @PostMapping("/crear")
+    public ResponseEntity<Anuncio> crearAnuncio(@RequestBody Anuncio anuncio, Principal principal) {
+        String correoUsuario = principal.getName();
+        Anuncio nuevoAnuncio = anuncioService.crearAnuncio(anuncio, correoUsuario);
+        return new ResponseEntity<>(nuevoAnuncio, HttpStatus.CREATED);
+    }
 }

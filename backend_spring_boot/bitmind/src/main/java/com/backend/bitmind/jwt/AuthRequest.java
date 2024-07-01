@@ -1,4 +1,4 @@
-package com.backend.bitmind.entity;
+package com.backend.bitmind.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AuthRequest {
 
-    private String username;
-    private String password;
+    //private String username;
+    //private String password;
+    private String correo;
+    private String clave;
 
 }
