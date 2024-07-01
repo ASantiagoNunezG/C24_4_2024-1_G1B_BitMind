@@ -1,0 +1,74 @@
+TRIGGERS
+
+USE BITMIND3
+-------------------------------------------
+DELIMITER //
+
+CREATE TRIGGER before_insert_anuncios
+BEFORE INSERT ON anuncios
+FOR EACH ROW
+BEGIN
+    SET NEW.fecha_creacion = DATE_FORMAT(NEW.fecha_creacion, '%Y-%m-%d %H:%i:%s.000000');
+END;
+
+//
+
+DELIMITER ;
+---------------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER before_insert_publicaciones
+BEFORE INSERT ON publicaciones
+FOR EACH ROW
+BEGIN
+    SET NEW.fecha_creacion = DATE_FORMAT(NEW.fecha_creacion, '%Y-%m-%d %H:%i:%s.000000');
+    SET NEW.fecha_modificacion = DATE_FORMAT(NEW.fecha_modificacion, '%Y-%m-%d %H:%i:%s.000000');
+END;
+
+//
+
+DELIMITER ;
+---------------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER before_insert_comentarios
+BEFORE INSERT ON comentarios
+FOR EACH ROW
+BEGIN
+    SET NEW.fecha_creacion = DATE_FORMAT(NEW.fecha_creacion, '%Y-%m-%d %H:%i:%s.000000');
+END;
+
+//
+
+DELIMITER ;
+---------------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER before_insert_foros
+BEFORE INSERT ON foros
+FOR EACH ROW
+BEGIN
+    SET NEW.fecha_creacion = DATE_FORMAT(NEW.fecha_creacion, '%Y-%m-%d %H:%i:%s.000000');
+END;
+
+//
+
+DELIMITER ;
+---------------------------------------------
+
+DELIMITER //
+
+CREATE TRIGGER before_insert_valoraciones
+BEFORE INSERT ON valoraciones
+FOR EACH ROW
+BEGIN
+    SET NEW.fecha_creacion = DATE_FORMAT(NEW.fecha_creacion, '%Y-%m-%d %H:%i:%s.000000');
+END;
+
+//
+
+DELIMITER ;
+---------------------------------------------
