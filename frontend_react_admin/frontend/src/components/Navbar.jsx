@@ -15,8 +15,8 @@ export function Navbar({ children }) {
   };
 
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white shadow-lg mt-10 mb-5 pb-4">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-4 overflow-x-auto flex-1">
             <div className="flex items-center md:hidden">
@@ -32,10 +32,10 @@ export function Navbar({ children }) {
               {children}
             </div>
           </div>
-          <div className="flex-shrink-0 ml-4">
+          <div className="flex-shrink-0 ml-5">
             <button
               onClick={handleLogout}
-              className="bg-red-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-600 transition duration-150 ease-in-out"
+              className="bg-red-500 text-white px-1 py-2 rounded-md text-sm font-medium hover:bg-red-600 transition duration-150 ease-in-out"
             >
               <LogOut size={20} className="mr-2" />
               Cerrar Sesión

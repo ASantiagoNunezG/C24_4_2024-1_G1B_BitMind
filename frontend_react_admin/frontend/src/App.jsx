@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Login } from './pages/Login.jsx';
 import { Navbar, NavbarItem } from './components/Navbar.jsx';
-import { LifeBuoy, User, Medal, PersonStanding, Trophy } from 'lucide-react';
+import { LifeBuoy, User, Medal, PersonStanding, Trophy, MessageCircle, GraduationCap, Microscope, BookMarked, Megaphone, ArchiveIcon, MessageCircleMore, HardDrive, Star } from 'lucide-react';
 import { Usuario } from './pages/Usuario.jsx';
 import { Comentario } from './pages/Comentario.jsx';
 import { Publicacion } from './pages/Publicacion.jsx';
@@ -23,17 +23,22 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className='flex items-center'>
+        <h1 className='txt'>PANEL DEL ADMINISTRADOR</h1>
+      </div>
+      
       <Navbar>
-        <NavbarItem icon={<LifeBuoy size={20} />} text="Gestión de Valoracion" to="/Valoracion" />
+        
         <NavbarItem icon={<User size={20} />} text="Gestión de Usuarios" to="/Usuarios" />
-        <NavbarItem icon={<Medal size={20} />} text="Gestión de Publicaciones" to="/Publicaciones" />
-        <NavbarItem icon={<PersonStanding size={20} />} text="Gestión de Foros" to="/Foros" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Anuncios" to="/Anuncios" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Archivos" to="/Archivos" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Carreras" to="/Carreras" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Ciclos" to="/Ciclos" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Comentarios" to="/Comentarios" />
-        <NavbarItem icon={<Trophy size={20} />} text="Gestión de Cursos" to="/Cursos" />
+        <NavbarItem icon={<Megaphone size={20} />} text="Gestión de Anuncios" to="/Anuncios" />
+        <NavbarItem icon={<HardDrive size={20} />} text="Gestión de Publicaciones" to="/Publicaciones" />
+        <NavbarItem icon={<ArchiveIcon size={20} />} text="Gestión de Archivos" to="/Archivos" />
+        <NavbarItem icon={<Star size={20} />} text="Gestión de Valoracion" to="/Valoracion" />
+        <NavbarItem icon={<MessageCircleMore size={20} />} text="Gestión de Foros" to="/Foros" />
+        <NavbarItem icon={<MessageCircle size={20} />} text="Gestión de Comentarios" to="/Comentarios" />
+        <NavbarItem icon={<Microscope size={20} />} text="Gestión de Cursos" to="/Cursos" />
+        <NavbarItem icon={<BookMarked size={20} />} text="Gestión de Ciclos" to="/Ciclos" />
+        <NavbarItem icon={<GraduationCap size={20} />} text="Gestión de Carreras" to="/Carreras" />
       </Navbar>
       <main className="content">
         <Routes>
