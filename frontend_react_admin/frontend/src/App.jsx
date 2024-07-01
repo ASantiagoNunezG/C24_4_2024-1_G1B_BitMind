@@ -23,12 +23,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className='flex items-center'>
-        <h1 className='txt'>PANEL DEL ADMINISTRADOR</h1>
+      <div className="flex items-center justify-center py-4 bg-gray-800">
+        <h1 className="text-4xl font-bold text-white tracking-wider">
+          PANEL DEL ADMINISTRADOR
+        </h1>
       </div>
-      
+
       <Navbar>
-        
+
         <NavbarItem icon={<User size={20} />} text="Gestión de Usuarios" to="/Usuarios" />
         <NavbarItem icon={<Megaphone size={20} />} text="Gestión de Anuncios" to="/Anuncios" />
         <NavbarItem icon={<HardDrive size={20} />} text="Gestión de Publicaciones" to="/Publicaciones" />
@@ -44,16 +46,16 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/Usuarios" element={<Usuario/>} />
-          <Route path="/Comentarios" element={<Comentario/>} />
-          <Route path="/Publicaciones" element={<Publicacion/>} />
-          <Route path="/Archivos" element={<Archivo/>} />
-          <Route path="/Valoracion" element={<Valoracion/>} />
-          <Route path="/Carreras" element={<Carrera/>} />
-          <Route path="/Ciclos" element={<Ciclo/>} />
-          <Route path="/Cursos" element={<Curso/>} />
-          <Route path="/Foros" element={<Foro/>} />
-          <Route path="/Anuncios" element={<Anuncio/>} />
+          <Route path="/Usuarios" element={<Usuario />} />
+          <Route path="/Comentarios" element={<Comentario />} />
+          <Route path="/Publicaciones" element={<Publicacion />} />
+          <Route path="/Archivos" element={<Archivo />} />
+          <Route path="/Valoracion" element={<Valoracion />} />
+          <Route path="/Carreras" element={<Carrera />} />
+          <Route path="/Ciclos" element={<Ciclo />} />
+          <Route path="/Cursos" element={<Curso />} />
+          <Route path="/Foros" element={<Foro />} />
+          <Route path="/Anuncios" element={<Anuncio />} />
           {/* Agrega más rutas según tus necesidades */}
         </Routes>
       </main>
